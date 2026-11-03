@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>一条长江，五个时代 — 五层地层图</title>
+<style>
+:root{
+  --bg:#f4f1e8; --panel:#fbf9f2; --line:#d8d2c2; --line2:#e6e1d3;
+  --text:#33302a; --dim:#6d675c; --dim2:#98917f;
+  --river:#c9d6c9;
+  --liu:#6a9455;   /* 柳宗元 唐   绿 */
+  --su:#8f6bb0;    /* 苏轼 北宋  紫 */
+  --lu:#b0741c;    /* 陆游 南宋  琥珀 */
+  --fan:#2c7da0;   /* 范成大 南宋 青 */
+  --zhang:#b05a5a; /* 张岱 明末 红 */
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"Source Han Serif SC","Noto Serif CJK SC","SimSun",serif;}
+#app{max-width:1280px;margin:0 auto;padding:18px 22px 40px}
+header{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+header h1{font-size:22px;margin:0;letter-spacing:.12em;font-weight:600}
+header .sub{font-size:12.5px;color:var(--dim)}
+#legend{margin:8px 0 14px;display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--dim)}
+#legend .it{display:flex;align-items:center;gap:6px}
+#legend .dot{width:10px;height:10px;border-radius:50%}
+#legend .note{color:var(--dim2);margin-left:auto;font-size:11.5px}
+#chart{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:4px}
+svg text{user-select:none}
+.tip{position:fixed;pointer-events:none;z-index:50;background:#fffdf6;border:1px solid var(--line);
+  padding:8px 12px;font-size:12px;line-height:1.7;max-width:340px;display:none;
+  box-shadow:0 4px 18px rgba(60,50,20,.18);color:var(--text)}
+.tip b{font-size:13px}
+.tip .d{color:var(--dim2);font-size:11px}
+footer{margin-top:12px;font-size:11.5px;color:var(--dim2);line-height:1.8}
+footer .hl{color:var(--dim)}
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>一条长江，五个时代</h1>
+    <span class="sub">五层地层图 —— 纵轴：时代（上早下晚） · 横轴：长江流段（西→东） · 同一地点在同一列</span>
+  </header>
+  <div id="legend">
+    <span class="it"><span class="dot" style="background:var(--liu)"></span>柳宗元（唐）</span>
+    <span class="it"><span class="dot" style="background:var(--su)"></span>苏轼（北宋）</span>
+    <span class="it"><span class="dot" style="background:var(--lu)"></span>陆游（南宋）</span>
+    <span class="it"><span class="dot" style="background:var(--fan)"></span>范成大（南宋）</span>
+    <span class="it"><span class="dot" style="background:var(--zhang)"></span>张岱（明末）</span>
+    <span class="it" style="color:var(--dim2)">● 作品　○ 在场（人到而未写文）　⟶ 相遇</span>
+  </div>
+  <svg id="chart"></svg>
+  <footer>
+    数据：works_v1（17 篇）· events_v2（266 日）· timeline（34 条）· places（379 条，142 有坐标）。
+    江道为示意走向（横轴按经度线性映射），地点横向位置=经度。柳宗元九记均在湘江支流永州段，故同列。
+    金山列 1170 年：陆游途经遇范成大（使金过镇），原文「相别八年」（入蜀记六月二十八日，四源互校）。
+  </footer>
+</div>
+<div class="tip" id="tip"></div>
+<script>
+/* ============================================================
+   数据——从 works_v1 / places / events_v2 提取的静态快照
+   （坐标经度用于横轴；visit_year 用于纵带内定位）
+   ============================================================ */
+const AUTHORS = [
+  {id:'liu',   name:'柳宗元', era:'唐 · 773–819',    color:'#6a9455',
+   works:[
+    {t:'遊黃溪記',        y:813, lon:111.61},
+    {t:'始得西山宴遊記',  y:809, lon:111.61},
+    {t:'鈷鉧潭記',        y:809, lon:111.61},
+    {t:'鈷鉧潭西小丘記',  y:809, lon:111.61},
+    {t:'至小丘西小石潭記',y:809, lon:111.61},
+    {t:'袁家渴記',        y:808, lon:111.61},
+    {t:'石渠記',          y:812, lon:111.61},
+    {t:'石澗記',          y:812, lon:111.61},
+    {t:'小石城山記',      y:812, lon:111.61},
+   ],
+   life:[{y:805, label:'貶永州司馬'}]},
+
+  {id:'su',    name:'苏轼',   era:'北宋 · 1037–1101', color:'#8f6bb0',
+   works:[
+    {t:'赤壁賦',    y:1082, lon:113.80},
+    {t:'後赤壁賦',  y:1082, lon:113.80},
+    {t:'石鐘山記',  y:1084, lon:116.00},
+    {t:'遊金山寺',  y:1071, lon:119.44},
+   ],
+   life:[{y:1080, label:'貶黃州團練副使'},{y:1071,label:'赴杭州通判途經金山'}]},
+
+  {id:'lu',    name:'陆游',   era:'南宋 · 1125–1210', color:'#b0741c',
+   works:[
+    {t:'入蜀記（起）', y:1170, lon:120.58, note:'山陰啟程，逐日日记至夔州'},
+   ],
+   route:{y:1170, from:120.58, to:108.4, label:'1170 閏五月—十月：山陰 → 夔州（156 日）'},
+   meet:{lon:119.44, y:1170, label:'金山遇范成大', quote:'相別八年'},
+   life:[{y:1170, label:'得報通判夔州，東行入蜀'}]},
+
+  {id:'fan',   name:'范成大', era:'南宋 · 1126–1193', color:'#2c7da0',
+   works:[
+    {t:'吳船錄（起）', y:1177, lon:104.06, note:'成都啟程，逐日日记歸臨安'},
+   ],
+   route:{y:1177, from:104.06, to:120.30, label:'1177 五月—十月：成都 → 平江（110 日）'},
+   meet:{lon:119.44, y:1170, label:'使金途經金山', quote:'玉鑑堂設宴招陸游'},
+   life:[{y:1177, label:'離成都，東歸故里'}]},
+
+  {id:'zhang', name:'张岱',   era:'明末 · 1597–1679', color:'#b05a5a',
+   works:[
+    {t:'金山夜戲', y:1629, lon:119.44, note:'崇禎二年；明亡後追憶成文'},
+    {t:'金山競渡', y:1642, lon:119.44, note:'壬午競渡於金山寺；明亡後追憶成文'},
+   ],
+   life:[]},
+];
+
+/* 长江示意节点（经度, 名称）——横向基线（仅示意走向） */
+const RIVER_PTS = [
+  [104.06,'成都'],[107.0,'重慶'],[108.4,'夔州'],[110.0,'巫峽'],[111.3,'峽州'],
+  [112.2,'荊州'],[113.8,'黃州'],[116.0,'江州'],[117.2,'安慶'],[118.4,'金陵'],
+  [119.44,'金山·鎮江'],[120.58,'山陰'],
+];
+const LON_RANGE = [103.0, 121.6];   // 横轴经度范围
+const YEAR_RANGE = [760, 1690];     // 纵轴年份范围（上=早）
+
+/* ---------- 渲染 ---------- */
+const svg = document.getElementById('chart');
+const NS = 'http://www.w3.org/2000/svg';
+const tip = document.getElementById('tip');
+function el(tag, attrs, parent){
+  const n=document.createElementNS(NS,tag);
+  if(attrs) for(const k in attrs) n.setAttribute(k,attrs[k]);
+  (parent||svg).appendChild(n); return n;
+}
+function txt(parent,x,y,s,attrs){
+  const t=el('text',Object.assign({x,y},attrs||{}),parent);
+  t.textContent=s; return t;
+}
+const esc = s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+function showTip(ev,html){
+  tip.innerHTML=html; tip.style.display='block';
+  const w=tip.offsetWidth,h=tip.offsetHeight,pad=14;
+  let x=ev.clientX+pad,y=ev.clientY+pad;
+  if(x+w>innerWidth-10)x=ev.clientX-w-pad;
+  if(y+h>innerHeight-10)y=ev.clientY-h-pad;
+  tip.style.left=x+'px';tip.style.top=y+'px';
+}
+const hideTip=()=>{tip.style.display='none'};
+
+function draw(){
+  const W = Math.min(1280, document.getElementById('app').clientWidth - 44);
+  const bandH = 118, topPad = 46, botPad = 64, H = topPad + AUTHORS.length*bandH + botPad;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  svg.setAttribute('width',W); svg.setAttribute('height',H);
+  svg.innerHTML='';
+  const padL=150, padR=36;
+  const px = lon => padL + (lon-LON_RANGE[0])/(LON_RANGE[1]-LON_RANGE[0])*(W-padL-padR);
+  const yearToY = (bandTop,bandBot,y)=> bandBot - (y-YEAR_RANGE[0])/(YEAR_RANGE[1]-YEAR_RANGE[0])*(bandBot-bandTop);
+
+  /* 纵向各带 */
+  const bands = AUTHORS.map((a,i)=>({a, top: topPad+i*bandH, bot: topPad+(i+1)*bandH}));
+
+  /* 纵向时代刻度（左侧） */
+  const gAxis = el('g',{});
+  for(const b of bands){
+    el('line',{x1:0,x2:padL-14,y1:(b.top+b.bot)/2,y2:(b.top+b.bot)/2,stroke:'none'},gAxis);
+    txt(gAxis, 14, (b.top+b.bot)/2 - 8, b.a.name, {'font-size':17,'font-weight':600,fill:b.a.color,'letter-spacing':'.08em'});
+    txt(gAxis, 14, (b.top+b.bot)/2 + 14, b.a.era, {'font-size':11,fill:'#98917f','letter-spacing':'.05em'});
+  }
+
+  /* 横向：每条带一条长江基线 + 地名刻度 */
+  const gRiver = el('g',{});
+  RIVER_PTS.forEach(([lon,name],i)=>{
+    const x = px(lon);
+    /* 地名只在最顶带上方和最底带下方标注 */
+    if(i%1===0){
+      /* 顶部标 */
+      txt(gRiver, x, topPad - 14, name, {'font-size':11.5,fill:'#6d675c','text-anchor':'middle','letter-spacing':'.04em'});
+      el('line',{x1:x,x2:x,y1:topPad-8,y2:H-botPad+8,stroke:'#e6e1d3','stroke-width':1,'stroke-dasharray':'2 5'},gRiver);
+    }
+  });
+  for(const [bi,b] of bands.entries()){
+    /* 带背景 */
+    el('rect',{x:padL,y:b.top+4,width:W-padL-padR,height:bandH-8,fill:bi%2? '#f7f4ea':'#fbf9f2',stroke:'#e6e1d3','stroke-width':1},gRiver);
+    /* 江线：用平滑折线近似长江走向 */
+    const d = RIVER_PTS.map(([lon],i)=>{
+      const x=px(lon);
+      const y = b.top + bandH*0.5 + Math.sin(i*1.7)*bandH*0.16;
+      return (i?'L':'M')+x.toFixed(1)+' '+y.toFixed(1);
+    }).join(' ');
+    el('path',{d,fill:'none',stroke:'#c9d6c9','stroke-width':7,'stroke-linecap':'round','stroke-linejoin':'round','stroke-opacity':.75},gRiver);
+  }
+
+  /* 逐带画内容 */
+  const gAll = el('g',{});
+  for(const b of bands){
+    const a = b.a;
+    /* 生平锚点（带内小三角） */
+    for(const l of (a.life||[])){
+      const y = yearToY(b.top+10, b.bot-10, l.y);
+      const cx = padL - 6;
+      /* 不放带内——生平放名字下方小字 */
+    }
+    /* 逐日路线（陆/范）：半透明横带贯穿 */
+    if(a.route){
+      const x1=px(a.route.from), x2=px(a.route.to);
+      const yMid = b.top + bandH*0.5;
+      const dir = a.route.from > a.route.to;
+      const d = `M ${Math.min(x1,x2)} ${yMid} L ${Math.max(x1,x2)} ${yMid}`;
+      el('path',{d,fill:'none',stroke:a.color,'stroke-width':3,'stroke-opacity':.28,'stroke-dasharray':dir?'10 4':'10 4'},gAll);
+      txt(gAll, dir? Math.min(x1,x2)+8 : Math.min(x1,x2)+8, yMid - 12, a.route.label,
+          {'font-size':10.5,fill:a.color,'fill-opacity':.85,'letter-spacing':'.03em'});
+    }
+    /* 作品点 */
+    for(const w of a.works){
+      const x = px(w.lon);
+      const y = yearToY(b.top+14, b.bot-14, w.y);
+      const c = el('circle',{cx:x,cy:y,r:7,fill:a.color,stroke:'#fffdf6','stroke-width':1.5,cursor:'pointer'},gAll);
+      c.addEventListener('mouseenter',ev=>showTip(ev,
+        `<b style="color:${a.color}">${esc(a.name)}〈${esc(w.t)}〉</b><br>
+         <span class="d">${w.y} 年 · 東經 ${w.lon}°</span>
+         ${w.note?`<br><span class="d">${esc(w.note)}</span>`:''}`));
+      c.addEventListener('mousemove',ev=>showTip(ev,
+        `<b style="color:${a.color}">${esc(a.name)}〈${esc(w.t)}〉</b><br>
+         <span class="d">${w.y} 年 · 東經 ${w.lon}°</span>
+         ${w.note?`<br><span class="d">${esc(w.note)}</span>`:''}`));
+      c.addEventListener('mouseleave',hideTip);
+      /* 篇名标签：同带内避让（简化：柳带9篇密集 → 交错上下） */
+      const sameLon = a.works.filter(o=>o.lon===w.lon);
+      const idx = sameLon.indexOf(w);
+      const dy = sameLon.length>1 ? (idx - (sameLon.length-1)/2)*16 : 0;
+      const lbl = txt(gAll, x+11, y+4+dy, w.t, {'font-size':11,fill:'#33302a','letter-spacing':'.02em',cursor:'pointer'});
+      lbl.addEventListener('mouseenter',ev=>showTip(ev,
+        `<b style="color:${a.color}">${esc(a.name)}〈${esc(w.t)}〉</b><br>
+         <span class="d">${w.y} 年 · 東經 ${w.lon}°</span>
+         ${w.note?`<br><span class="d">${esc(w.note)}</span>`:''}`));
+      lbl.addEventListener('mouseleave',hideTip);
+    }
+    /* 相遇标记（陆/范在 1170 金山） */
+    if(a.meet){
+      const x = px(a.meet.lon);
+      const y = yearToY(b.top+14, b.bot-14, a.meet.y);
+      const c = el('circle',{cx:x,cy:y,r:8,fill:'none',stroke:a.color,'stroke-width':2.5,'stroke-dasharray':'3 3',cursor:'pointer'},gAll);
+      c.addEventListener('mouseenter',ev=>showTip(ev,
+        `<b style="color:${a.color}">${esc(a.name)} · ${esc(a.meet.label)}</b><br>
+         <span class="d">${a.meet.y} 年 · 東經 ${a.meet.lon}°</span><br>
+         <span class="d">${esc(a.meet.quote)}</span>`));
+      c.addEventListener('mouseleave',hideTip);
+    }
+  }
+
+  /* 陆范相遇连线（跨两带） */
+  const luBand = bands[2], fanBand = bands[3];
+  const mx = px(119.44);
+  const luY = yearToY(luBand.top+14, luBand.bot-14, 1170);
+  const fanY = yearToY(fanBand.top+14, fanBand.bot-14, 1170);
+  el('line',{x1:mx,y1:luY+8,x2:mx,y2:fanY-8,stroke:'#7a6a4a','stroke-width':1.6,'stroke-dasharray':'4 3'},gAll);
+  const mt = txt(gAll, mx+12, (luY+fanY)/2+4, '1170 · 金山相遇', {'font-size':12,fill:'#7a6a4a','letter-spacing':'.06em','font-weight':600});
+  mt.style.cursor='pointer';
+  mt.addEventListener('mouseenter',ev=>showTip(ev,
+    `<b>1170-06-28 · 金山</b><br>陸游入蜀途經，范成大使金過鎮，玉鑑堂設宴。<br>
+     原文：<span class="d">「奉使金國起居郎范至能至山，遣人相招食於玉鑑堂。……相別八年」</span><br>
+     <span class="d">（《入蜀記》六月二十八日，ctext/維基文庫/四庫本/hhl 四源互校）</span>`));
+  mt.addEventListener('mouseleave',hideTip);
+
+  /* 底部时间刻度 */
+  const gT = el('g',{});
+  for(const yr of [800,1000,1100,1200,1400,1600]){
+    const y = yearToY(bands[4].top+4, H-botPad+20, yr);
+    /* 不画——时代用带次序表达即可，避免双重时间编码 */
+  }
+  /* 顶部说明 */
+  txt(gT, padL, 24, '西 ← 長江流段 → 東（橫軸：經度）', {'font-size':11.5,fill:'#98917f','letter-spacing':'.1em'});
+  txt(gT, padL, 40, '上早 ↓ 下晚（縱序：五帶=五時代）', {'font-size':11.5,fill:'#98917f','letter-spacing':'.1em'});
+}
+draw();
+addEventListener('resize', draw);
+</script>
+</body>
+</html>

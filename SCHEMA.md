@@ -108,7 +108,8 @@ timeline 编年 ←── works 与 events 的时间锚点
 | author_id | str | 挂 persons | 核心 |
 | parent_id | str | 若为篇，挂所属书（可空） | 核心 |
 | genre | enum | 日记体书 / 记游散文 / 赋 / 诗 / 小品 | 核心 |
-| year / month / day | int | 写作时间（精确到月日，考不到回退） | 核心 |
+| visit_year / visit_month / visit_day | int | **游览时间**（精确到月日，考不到回退） | 核心 |
+| write_year / write_month / write_day | int | **成文时间**（与游时分离；行时记两值相等） | 核心 |
 | date_orig | str | 原文纪日 | 可选 |
 | place_id | str | 主地点（挂 places） | 核心 |
 | situation | str | **写作处境**（贬谪/赴任/还乡/追忆亡国…） | 核心 |
@@ -190,4 +191,4 @@ intertexts:  source=event e-ru-083, target=p-su-shi, relation=追慕,
 
 ---
 
-*本 schema 由 jiya 整理，2026-10-28。v1，待小组确认后冻结。*
+*本 schema 由 jiya 整理，2026-11-03。v1，待小组确认后冻结。*

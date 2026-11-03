@@ -21,8 +21,10 @@ import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-LU_SRC = os.path.join(ROOT, "data/archive/v004_入蜀记_词典补全/data/events.json")
-FAN_SRC = os.path.join(ROOT, "data/archive/v003_吴船录_纯原文匹配/data/events.json")
+LU_SRC = os.path.join(ROOT, "data/events_v2/入蜀記_events.json")
+FAN_SRC = os.path.join(ROOT, "data/events_v2/吳船錄_events.json")
+WORKS_SRC = os.path.join(ROOT, "data/works_v1/works.json")
+PERSONS_SRC = os.path.join(ROOT, "data/base/persons.json")
 COORD_SRC = os.path.join(HERE, "coords.json")
 TMPL = os.path.join(HERE, "_template.html")
 FONT_CACHE = os.path.join(HERE, "_font.woff2")
@@ -71,29 +73,42 @@ def load_events(coords):
     fan = json.load(open(FAN_SRC, encoding="utf-8"))
     ev = []
     for e in lu:
+        mon_raw = e.get("month") or ""
+        leap = "閏" in mon_raw
         ev.append({
             "id": e["id"], "person": "lu", "juan": e["juan"],
-            "m": cnum(e.get("month")), "d": cnum((e.get("day") or "").replace("日", "")),
+            "m": cnum(mon_raw.replace("閏", "").replace("月", "")), "d": cnum((e.get("day") or "").replace("日", "")),
+            "leap": leap,
             "date": e.get("date_raw") or "",
             "exact": True, "dateSrc": "",            # 入蜀记：日期全部原文直出
             "orig": e["orig"],
             "place": e.get("place"),
             "places": e.get("place_all") or [],
             "activity": e.get("activity") or [],
+            "weather": e.get("weather") or [],
+            "emotion": e.get("emotion") or [],
+            "landscape": e.get("landscape") or [],
+            "imagery": e.get("imagery") or [],
             "note": e.get("note") or "",
             "people": [],
         })
     for e in fan:
-        exact = e.get("day_src") == "anchor"        # anchor=原文明白；ref=据前后日推算
+        exact = e.get("day_src") == "anchor" if "day_src" in e else isinstance(e.get("day_num"), int)
+        mon_raw = e.get("month") or ""
         ev.append({
             "id": e["id"], "person": "fan", "juan": e["juan"],
-            "m": e.get("month"), "d": e.get("day_num"),
+            "m": cnum(mon_raw.replace("閏", "").replace("月", "")), "d": e.get("day_num"),
+            "leap": "閏" in mon_raw,
             "date": e.get("date_raw") or "",
             "exact": exact, "dateSrc": "原文錨定" if exact else "據前後日推算",
             "orig": e["orig"],
             "place": e.get("place"),
             "places": e.get("place_all") or [],
             "activity": e.get("activity") or [],
+            "weather": e.get("weather") or [],
+            "emotion": e.get("emotion") or [],
+            "landscape": e.get("landscape") or [],
+            "imagery": e.get("imagery") or [],
             "note": e.get("note") or "",
             "people": [[p["name"], p["type"]] for p in (e.get("people") or [])],
         })
@@ -132,6 +147,13 @@ def main():
     CLUSTERS = json.load(open(os.path.join(HERE, "clusters.json"), encoding="utf-8"))
     # 只保留有坐标的簇
     ev, places = load_events(coords)
+    # works + 作者名（篇目视图用）
+    works = json.load(open(WORKS_SRC, encoding="utf-8"))
+    persons = {p["id"]: p for p in json.load(open(PERSONS_SRC, encoding="utf-8"))}
+    for w in works:
+        p = persons.get(w.get("author_id") or "")
+        w["author_name"] = p["name"] if p else (w.get("author_id") or "")
+    WORKS = works
     data = {
         "people": {
             "lu": {"name": "陸游", "title": "入蜀記", "year": "1170 乾道六年", "color": "#e0a34a"},
@@ -139,6 +161,7 @@ def main():
         },
         "events": ev,
         "places": places,
+        "works": WORKS,
         "river": [[a, b] for a, b in RIVER],
         "clusters": CLUSTERS,
     }
@@ -149,12 +172,20 @@ def main():
     for e in ev:
         for k in ("orig", "note", "place", "date", "dateSrc"):
             chars |= set(e.get(k) or "")
+        for k in ("weather", "emotion", "landscape", "imagery"):
+            for v in (e.get(k) or []):
+                chars |= set(str(v))
         for p in e["places"]:
             chars |= set(p)
         for p in e["people"]:
             chars |= set(p[0]) | set(p[1])
         chars |= set(e["activity"])
     chars |= set("".join(places))
+    for w in WORKS:
+        for k in ("title", "genre", "author_name", "mood", "theme", "structure", "style", "note", "situation", "date_orig"):
+            chars |= set(str(w.get(k) or ""))
+        for i in (w.get("imagery") or []):
+            chars |= set(str(i))
     chars |= set(html.split("<body>")[1])           # 页面固定文案
     chars |= set("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,;:()[]+-%/·°「」《》、，。（）；！？—…")
     fb = build_font_subset(chars)

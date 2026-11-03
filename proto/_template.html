@@ -8,9 +8,9 @@
 /* 内嵌子集字体（SimHei 子集，WOFF2 base64）——脱离本机字体也能显示原文的繁体/异体字 */
 @font-face{font-family:"YZHei";src:url(data:font/woff2;base64,__FONT__) format("woff2");font-display:block;}
 :root{
-  --bg:#0e1113; --panel:#14181b; --line:#262d32; --line2:#1d2327;
-  --text:#d6dad6; --dim:#8a938d; --dim2:#5c6560;
-  --lu:#e0a34a; --fan:#5aa9c9; --hl:#ece9dd;
+  --bg:#f4f1e8; --panel:#fbf9f2; --line:#d8d2c2; --line2:#e6e1d3;
+  --text:#33302a; --dim:#6d675c; --dim2:#98917f;
+  --lu:#b0741c; --fan:#2c7da0; --hl:#1e1c17;
 }
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
@@ -34,10 +34,10 @@ section{position:relative;min-height:0;overflow:hidden}
 #mapwrap{border-bottom:1px solid var(--line)}
 .vtitle{position:absolute;left:14px;top:9px;font-size:10.5px;color:var(--dim2);letter-spacing:.2em;z-index:2;pointer-events:none}
 svg{display:block}
-svg .lbl{font-size:10px;fill:#98a19b;letter-spacing:.03em;pointer-events:none}
-svg .ax{font-size:10px;fill:#6e7772;letter-spacing:.06em}
-svg .grid{stroke:#20272b;stroke-width:1}
-svg .grid.x{stroke:#171c1f}
+svg .lbl{font-size:10px;fill:#7a7466;letter-spacing:.03em;pointer-events:none}
+svg .ax{font-size:10px;fill:#a39b88;letter-spacing:.06em}
+svg .grid{stroke:#e2dcc9;stroke-width:1}
+svg .grid.x{stroke:#ece7d6}
 
 #legend{position:absolute;right:12px;top:7px;z-index:3;display:flex;gap:20px;font-size:10.5px;color:var(--dim);
   background:rgba(14,17,19,.82);padding:7px 10px;border:1px solid var(--line2)}
@@ -49,7 +49,7 @@ svg .grid.x{stroke:#171c1f}
 #panel .ph .tag{font-size:10px;letter-spacing:.18em;color:var(--dim2)}
 #pid{margin-left:auto;font-size:10px;color:var(--dim2);font-variant-numeric:tabular-nums}
 #pbody{overflow-y:auto;padding:14px 18px 48px;flex:1}
-#pbody::-webkit-scrollbar{width:8px}#pbody::-webkit-scrollbar-thumb{background:#2b3338}
+#pbody::-webkit-scrollbar{width:8px}#pbody::-webkit-scrollbar-thumb{background:#d5cfbd}
 .empty{color:var(--dim2);line-height:2;font-size:12px}
 .who{font-size:13px;font-weight:400;margin:0 0 2px;letter-spacing:.1em}
 .who small{color:var(--dim2);font-size:10.5px;margin-left:8px;letter-spacing:.04em}
@@ -59,7 +59,7 @@ svg .grid.x{stroke:#171c1f}
 .chip{border:1px solid var(--line);color:var(--dim);padding:1px 7px;font-size:10.5px;border-radius:2px}
 .chip.inf{border-color:#4a4234;color:#b39a63}
 .coord{color:var(--dim2);font-size:10px;margin-left:5px}
-#orig{font-size:16.5px;line-height:2.05;letter-spacing:.045em;color:#eeece1;white-space:pre-wrap;
+#orig{font-size:16.5px;line-height:2.05;letter-spacing:.045em;color:#1e1c17;white-space:pre-wrap;
   word-break:break-word;border-top:1px solid var(--line2);margin-top:14px;padding-top:14px}
 .note{font-size:11px;color:var(--dim2);line-height:1.75;margin-top:12px;border-left:2px solid var(--line);padding-left:8px}
 .people{margin-top:14px;font-size:11px;color:var(--dim);line-height:1.85}
@@ -71,12 +71,24 @@ svg .grid.x{stroke:#171c1f}
 #nav{margin-top:18px;display:flex;gap:6px;border-top:1px solid var(--line2);padding-top:12px}
 #nav button{font:inherit;font-size:11px;color:var(--dim);background:transparent;border:1px solid var(--line);padding:3px 9px;cursor:pointer}
 #nav button:hover{color:var(--text);border-color:var(--dim2)}
-#tip{position:fixed;pointer-events:none;z-index:50;background:#0b0e10;border:1px solid var(--line);padding:5px 9px;
+#tip{position:fixed;pointer-events:none;z-index:50;background:#efe9da;border:1px solid var(--line);padding:5px 9px;
   font-size:11px;color:var(--text);max-width:330px;line-height:1.6;display:none;box-shadow:0 4px 18px rgba(0,0,0,.55)}
 #tip .d{color:var(--dim2);font-size:10px}
 
   /* 聚合点数字角标 */
-  text.badge { font-size:9.5px; fill:#c8d2d8; font-weight:600; pointer-events:none; letter-spacing:0; }
+  text.badge { font-size:9.5px; fill:#2e3138; font-weight:600; pointer-events:none; letter-spacing:0; }
+
+  /* 篇目卡片 */
+  #workswrap{padding:12px 14px 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+  .wcard{border:1px solid var(--line);border-left:3px solid #8a938d;background:#f2eee0;padding:10px 12px;cursor:pointer}
+  .wcard:hover{border-color:var(--dim2);background:#e8e2d0}
+  .wcard .wt{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .wcard .wt b{font-weight:400;font-size:13px;color:var(--hl);letter-spacing:.06em}
+  .wcard .wg{font-size:10px;letter-spacing:.1em;white-space:nowrap}
+  .wcard .wm{font-size:10.5px;color:var(--dim2);margin-top:4px;letter-spacing:.04em}
+  .wcard .wd{font-size:11px;color:var(--dim);line-height:1.7;margin-top:6px}
+  .wcard .wchips{margin-top:7px;display:flex;gap:4px;flex-wrap:wrap}
+  #worksview::-webkit-scrollbar{width:8px}#worksview::-webkit-scrollbar-thumb{background:#d5cfbd}
 </style>
 </head>
 <body>
@@ -89,6 +101,11 @@ svg .grid.x{stroke:#171c1f}
       <button data-f="lu">陸游</button>
       <button data-f="fan">范成大</button>
       <button data-f="both">都到過的地點</button>
+      <span style="width:14px"></span>
+      <button data-v="route" class="on">路線</button>
+      <button data-v="weather">天氣</button>
+      <button data-v="emotion">情感</button>
+      <button data-v="works">篇目</button>
       <span id="count"></span>
     </div>
   </header>
@@ -111,8 +128,11 @@ svg .grid.x{stroke:#171c1f}
         <svg id="map"></svg>
       </section>
       <section id="chartwrap">
-        <div class="vtitle">時 間 · 兩條泳道（五 → 十二月；日期按「月＋日/31」線性排布）</div>
+        <div class="vtitle" id="charttitle">時 間 · 兩條泳道（五 → 十二月；日期按「月＋日/31」線性排布）</div>
         <svg id="chart"></svg>
+      </section>
+      <section id="worksview" style="display:none;overflow-y:auto">
+        <div id="workswrap"></div>
       </section>
     </div>
     <aside id="panel">
@@ -213,7 +233,7 @@ function drawMap(){
 
   /* 长江示意折线：只作方位参照，不画航迹以免与散点抢视觉 */
   const d = 'M' + DATA.river.map(([la, lo]) => px(lo).toFixed(1) + ' ' + py(la).toFixed(1)).join(' L');
-  el('path', {d, fill:'none', stroke:'#1b262c', 'stroke-width':8, 'stroke-linejoin':'round', 'stroke-linecap':'round'}, g);
+  el('path', {d, fill:'none', stroke:'#c9d6c9', 'stroke-width':8, 'stroke-linejoin':'round', 'stroke-linecap':'round'}, g);
 
   /* 站点：先按坐标簇聚合（2km 内视作同一处），再按当前筛选重算每次访问 */
   const sites = [];
@@ -242,7 +262,7 @@ function drawMap(){
     if (!both){
       const who = p.lu.length ? 'lu' : 'fan';
       const c = el('circle', {cx, cy, r:p.r, fill:P[who].color, 'fill-opacity':0.88,
-                              stroke:'#0e1113', 'stroke-width':1.2}, gPts);
+                              stroke:'#fdfbf4', 'stroke-width':1.2}, gPts);
       /* 命中区比可见点大，小点也好点中 */
       const hit = el('circle', {cx, cy, r:Math.max(7, p.r), fill:'transparent'}, gPts);
       hit.style.cursor = 'pointer';
@@ -252,14 +272,14 @@ function drawMap(){
       el('circle', {cx, cy, r:p.r, fill:'none', stroke:P.lu.color, 'stroke-width':2.2}, gPts);
       el('circle', {cx, cy, r:p.r, fill:'none', stroke:P.fan.color, 'stroke-width':2.2,
                     'stroke-dasharray':'3.5 3.5', transform:`rotate(45 ${cx} ${cy})`}, gPts);
-      const hit = el('circle', {cx, cy, r:Math.max(2, p.r - 3), fill:'#0e1113'}, gPts);
+      const hit = el('circle', {cx, cy, r:Math.max(2, p.r - 3), fill:'#fdfbf4'}, gPts);
       hit.style.cursor = 'pointer';
       bindPt(hit, p);
     }
     /* 聚合点：右上角数字角标，告诉读者这里不止一个地点 */
     if (p.names.length > 1){
       const bx = cx + p.r * 0.72, by = cy - p.r * 0.72;
-      el('circle', {cx:bx, cy:by, r:6.4, fill:'#0e1113', stroke:'#5a6b74', 'stroke-width':1}, gPts);
+      el('circle', {cx:bx, cy:by, r:6.4, fill:'#fdfbf4', stroke:'#8d99a4', 'stroke-width':1}, gPts);
       const bt = txt(gPts, bx, by + 3.2, String(p.names.length), 'badge');
       bt.setAttribute('text-anchor','middle');
     }
@@ -326,8 +346,8 @@ function drawChart(){
 
   for (const m of MONTHS){
     const xx = x(m);
-    el('line', {x1:xx, x2:xx, y1:padT - 8, y2:padT - 2, stroke:'#2c3439'}, g);       // 月界顶刻
-    el('line', {x1:xx, x2:xx, y1:H - padB, y2:H - padB + 4, stroke:'#2c3439'}, g);   // 月界底刻
+    el('line', {x1:xx, x2:xx, y1:padT - 8, y2:padT - 2, stroke:'#c5beaa'}, g);       // 月界顶刻
+    el('line', {x1:xx, x2:xx, y1:H - padB, y2:H - padB + 4, stroke:'#c5beaa'}, g);   // 月界底刻
     if (m === 5 || m === 7 || m === 9 || m === 11) {                                // 隔月标字，防挤
       el('line', {x1:xx, x2:xx, y1:padT - 8, y2:H - padB, class:'grid'}, g);
       txt(g, xx + 4, H - padB + 18, mname[m], 'ax');
@@ -336,8 +356,8 @@ function drawChart(){
   for (const k of ['lu','fan']){
     const y = lanes[k];
     el('rect', {x:padL, y:y - laneH * 0.36, width:W - padL - padR, height:laneH * 0.72,
-                fill:'#111619', 'fill-opacity':0.55}, g);
-    el('line', {x1:padL, x2:W - padR, y1:y, y2:y, stroke:'#232b30'}, g);
+                fill:'#f2eee0', 'fill-opacity':0.55}, g);
+    el('line', {x1:padL, x2:W - padR, y1:y, y2:y, stroke:'#ddd6c2'}, g);
     txt(g, padL - 12, y - 2, P[k].name, 'lbl').setAttribute('text-anchor','end');
     txt(g, padL - 12, y + 11, P[k].year, 'ax').setAttribute('text-anchor','end');
   }
@@ -362,8 +382,178 @@ function drawChart(){
     bindTip(c, () => `<b>${P[e.person].name}</b> <span class="d">${e.date}${e.exact ? '' : '（推算）'}</span><br>`
                    + `${e.place ? esc(e.place) : '<span class="d">（原文未著地名）</span>'}`);
     c.addEventListener('click', () => select(e.id));
-    if (selected === e.id) el('circle', {cx, cy, r:7, fill:'none', stroke:'#ece9dd', 'stroke-width':1}, g);
+    if (selected === e.id) el('circle', {cx, cy, r:7, fill:'none', stroke:'#1e1c17', 'stroke-width':1}, g);
   }
+}
+
+/* ============================================================
+   B2. 天气视图 —— 天气 × 活动热力矩阵（按当前筛选聚合）
+   ============================================================ */
+const WX_ORDER = ['晴','暑','風','雨','寒','霧'];
+const AC_ORDER = ['行路','游观','交游','考订','风土','其他'];
+const AC_NAME  = {行路:'行路',游观:'遊觀',交游:'交遊',考订:'考訂',风土:'風土',其他:'其他'};
+const WX_NAME  = {晴:'晴',暑:'暑',風:'風',雨:'雨',寒:'寒',霧:'霧'};
+
+function drawWeather(){
+  const W = chartSvg.clientWidth || 900, H = chartSvg.clientHeight || 240;
+  chartSvg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  chartSvg.innerHTML = '';
+  const g = el('g', null, chartSvg);
+  const padL = 74, padR = 40, padT = 30, padB = 44;
+  const cw = (W - padL - padR) / WX_ORDER.length;
+  const ch = (H - padT - padB) / AC_ORDER.length;
+
+  /* 统计 */
+  const cell = {};
+  for (const e of EV){
+    if (!visible(e)) continue;
+    for (const w of (e.weather||[])) for (const a of (e.activity||[])){
+      const k = w+'|'+a;
+      cell[k] = (cell[k]||0)+1;
+    }
+  }
+  const max = Math.max(1, ...Object.values(cell));
+
+  /* 列头（天气）行头（活动） */
+  txt(g, padL - 12, padT - 12, '天氣 × 活動（格愈亮，同日並見愈多）', 'lbl');
+  WX_ORDER.forEach((w,i)=>{
+    txt(g, padL + cw*i + cw/2, padT - 4, WX_NAME[w], 'lbl').setAttribute('text-anchor','middle');
+  });
+  AC_ORDER.forEach((a,j)=>{
+    txt(g, padL - 12, padT + ch*j + ch/2 + 4, AC_NAME[a]||a, 'lbl').setAttribute('text-anchor','end');
+  });
+
+  WX_ORDER.forEach((w,i)=>{
+    AC_ORDER.forEach((a,j)=>{
+      const v = cell[w+'|'+a]||0;
+      const t = v/max;
+      el('rect', {
+        x:padL + cw*i + 2, y:padT + ch*j + 2, width:cw-4, height:ch-4,
+        fill: v ? P.lu.color : '#e8e2d0', 'fill-opacity': v ? (0.12 + 0.75*Math.sqrt(t)) : 1,
+        stroke:'#ddd6c2','stroke-width':1
+      }, g);
+      if (v){
+        const tx = txt(g, padL + cw*i + cw/2, padT + ch*j + ch/2 + 4, v, 'lbl');
+        tx.setAttribute('text-anchor','middle');
+        tx.setAttribute('fill', t > 0.45 ? '#fdfbf4' : '#7a7466');
+      }
+    });
+  });
+  txt(g, padL, H - 14, '一格＝「某天氣與某活動同日並見」的事件數；同一日多重標注重複計。', 'ax');
+}
+
+/* ============================================================
+   B3. 情感视图 —— 沿时间的情绪泳道（两书对照）
+   ============================================================ */
+const EM_ORDER = ['憂慮','曠達','追慕','驚嘆','憐憫'];
+function emKey(s){
+  s = (s||'').replace('憂','忧').replace('慮','虑').replace('曠','旷').replace('達','达')
+             .replace('嘆','叹').replace('憐','怜').replace('憫','悯');
+  return {'忧虑':'憂慮','旷达':'曠達','追慕':'追慕','惊叹':'驚嘆','怜悯':'憐憫'}[s] || s;
+}
+
+function drawEmotion(){
+  const W = chartSvg.clientWidth || 900, H = chartSvg.clientHeight || 240;
+  chartSvg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  chartSvg.innerHTML = '';
+  const g = el('g', null, chartSvg);
+  const padL = 74, padR = 40, padT = 26, padB = 32;
+  const x = m => padL + (m - 5) / 7.6 * (W - padL - padR);
+  const mname = {5:'五月',6:'六月',7:'七月',8:'八月',9:'九月',10:'十月',12.6:'年末'};
+
+  for (const m of MONTHS){
+    const xx = x(m);
+    el('line', {x1:xx, x2:xx, y1:padT - 8, y2:H - padB + 4, class:'grid'}, g);
+    if (m === 5 || m === 7 || m === 9 || m === 11) txt(g, xx + 4, H - padB + 18, mname[m], 'ax');
+  }
+  const laneH = (H - padT - padB) / 2;
+  const lanes = {lu: padT + laneH * 0.42, fan: padT + laneH * 1.45};
+  for (const k of ['lu','fan']){
+    const y = lanes[k];
+    el('rect', {x:padL, y:y - laneH*0.4, width:W - padL - padR, height:laneH*0.8,
+                fill:'#f2eee0','fill-opacity':0.55}, g);
+    txt(g, padL - 12, y - 2, P[k].name, 'lbl').setAttribute('text-anchor','end');
+  }
+  /* 每条情绪一个符号形：忧=下三角、旷=上三角、慕=方、叹=菱、悯=圆 —— 形状即语义 */
+  const shape = {
+    '憂慮': (cx,cy,r)=>`M${cx-r} ${cy-r*0.7} L${cx+r} ${cy-r*0.7} L${cx} ${cy+r} Z`,
+    '曠達': (cx,cy,r)=>`M${cx} ${cy-r} L${cx+r} ${cy+r*0.7} L${cx-r} ${cy+r*0.7} Z`,
+    '追慕': (cx,cy,r)=>`M${cx-r} ${cy-r} h${2*r} v${2*r} h${-2*r} Z`,
+    '驚嘆': (cx,cy,r)=>`M${cx} ${cy-r} L${cx+r} ${cy} L${cx} ${cy+r} L${cx-r} ${cy} Z`,
+    '憐憫': (cx,cy,r)=>`M${cx} ${cy-r} a${r} ${r} 0 1 0 0.01 0 Z`,
+  };
+  const emColor = {'憂慮':'#6a9455','曠達':'#5e9c77','追慕':'#8f6bb0','驚嘆':'#b0741c','憐憫':'#b05a5a'};
+  const slot = {};
+  for (const e of EV){
+    if (!visible(e) || e.m == null || e.d == null || e.m > 12) continue;
+    for (const raw of (e.emotion||[])){
+      const em = emKey(raw);
+      if (!shape[em]) continue;
+      const key = e.person+'|'+e.m+'|'+e.d;
+      const k = slot[key] = (slot[key]||0)+1;
+      const dy = ((k-1)%4 - 1.5) * 9;
+      const cx = x(dayVal(e)), cy = lanes[e.person] + dy;
+      const p = el('path', {d: shape[em](cx,cy,5), fill: emColor[em], 'fill-opacity':0.92}, g);
+      p.style.cursor='pointer';
+      bindTip(p, () => `<b>${P[e.person].name}</b> <span class="d">${e.date}</span><br>情緒：${em}<br>${e.place?esc(e.place):''}`);
+      p.addEventListener('click', ()=>select(e.id));
+    }
+  }
+  /* 图例 */
+  let lx = padL;
+  for (const em of Object.keys(shape)){
+    el('path', {d: shape[em](lx+6, H-12, 5), fill: emColor[em]}, g);
+    const t = txt(g, lx+16, H-8, em, 'ax');
+    lx += 16 + t.getComputedTextLength() + 18;
+  }
+}
+
+/* ============================================================
+   B4. 篇目视图 —— 17 篇卡片（下半区整块替换时间线）
+   ============================================================ */
+function drawWorks(){
+  chartSvg.innerHTML = '';
+  document.getElementById('charttitle').textContent = '篇 目 · 十七篇（文體着色 · 點擊聯動原文面板）';
+  const wrap = document.getElementById('workswrap');
+  const GEN_COLOR = {'记游散文':'#b0741c','赋':'#c07a35','诗':'#2c7da0','小品':'#8f6bb0','日记体书':'#6a9455'};
+  let h = '';
+  for (const w of DATA.works){
+    const c = GEN_COLOR[w.genre] || '#8a938d';
+    h += `<div class="wcard" data-w="${esc(w.id)}" style="border-left-color:${c}">
+      <div class="wt"><b>${esc(w.title)}</b><span class="wg" style="color:${c}">${esc(w.genre)}</span></div>
+      <div class="wm">${esc(w.author_name)} · ${w.visit_year ?? '—'}${w.write_year && w.write_year!==w.visit_year ? '（寫於 '+w.write_year+'）' : ''}</div>
+      <div class="wd">${esc((w.theme||'').slice(0,64))}${(w.theme||'').length>64?'…':''}</div>
+      <div class="wchips">${(w.mood?[`<span class="chip inf">${esc(w.mood)}</span>`]:[])
+        .concat((w.imagery||[]).slice(0,3).map(i=>`<span class="chip">${esc(i)}</span>`)).join('')}</div>
+    </div>`;
+  }
+  wrap.innerHTML = h;
+  wrap.querySelectorAll('.wcard').forEach(n => n.onclick = () => selectWork(n.dataset.w));
+}
+
+function selectWork(wid){
+  const w = DATA.works.find(x => x.id === wid);
+  if (!w) return;
+  selected = null;
+  document.getElementById('pid').textContent = w.id;
+  let h = '';
+  h += `<div class="who" style="color:#1e1c17">${esc(w.title)}<small>${esc(w.author_name)} · ${esc(w.genre)}</small></div>`;
+  h += `<div class="meta">`;
+  h += `<div class="k">遊歷</div><div>${w.visit_year ?? '—'}${w.visit_month ? '年'+w.visit_month+'月' : ''}${w.visit_day ? w.visit_day+'日' : ''}</div>`;
+  h += `<div class="k">寫作</div><div>${w.write_year ?? '—'}${w.write_month ? '年'+w.write_month+'月' : ''}${w.write_day ? w.write_day+'日' : ''}</div>`;
+  if (w.date_orig) h += `<div class="k">原文紀年</div><div>${esc(w.date_orig)}</div>`;
+  if (w.situation) h += `<div class="k">處境</div><div>${esc(w.situation)}</div>`;
+  if (w.mood) h += `<div class="k">情緒</div><div><span class="chip inf">${esc(w.mood)}</span></div>`;
+  h += `</div>`;
+  if (w.theme) h += `<div class="note" style="border-left-color:#4a4234">${esc(w.theme)}</div>`;
+  if (w.structure) h += `<div class="note">章法：${esc(w.structure)}</div>`;
+  if (w.style) h += `<div class="note">風格：${esc(w.style)}</div>`;
+  if (w.imagery && w.imagery.length) h += `<div class="allplaces"><span class="k">意象</span>` +
+    w.imagery.map(i=>`<span class="chip">${esc(i)}</span>`).join('') + `</div>`;
+  if (w.note) h += `<div class="note">${esc(w.note)}</div>`;
+  const pb = document.getElementById('pbody');
+  pb.innerHTML = h;
+  pb.scrollTop = 0;
 }
 
 /* ============================================================
@@ -384,8 +574,14 @@ function select(id){
      + (e.dateSrc ? `<span class="coord">${e.dateSrc}</span>` : '') + `</div>`;
   h += `<div class="k">地點</div><div>${e.place ? esc(e.place) : '<span style="color:var(--dim2)">原文未著地名</span>'}`
      + (s ? `<span class="coord">${s.lat.toFixed(2)}°N, ${s.lon.toFixed(2)}°E</span>`
-          : (e.place ? '<span class="coord" style="color:#8a6a3a">無坐標</span>' : '')) + `</div>`;
+          : (e.place ? '<span class="coord" style="color:#9a6d1f">無坐標</span>' : '')) + `</div>`;
   h += `<div class="k">活動</div><div class="chips">${act}</div>`;
+  const wx = (e.weather||[]).map(a => `<span class="chip">${esc(a)}</span>`).join('');
+  const emo = (e.emotion||[]).map(a => `<span class="chip inf">${esc(a)}</span>`).join('');
+  const img = (e.imagery||[]).map(a => `<span class="chip">${esc(a)}</span>`).join('');
+  if (wx)  h += `<div class="k">天氣</div><div class="chips">${wx}</div>`;
+  if (emo) h += `<div class="k">情緒</div><div class="chips">${emo}</div>`;
+  if (img) h += `<div class="k">意象</div><div class="chips">${img}</div>`;
   h += `</div>`;
   h += `<div id="orig">${esc(e.orig)}</div>`;
   if (e.note) h += `<div class="note">表注：${esc(e.note)}</div>`;
@@ -415,12 +611,31 @@ function select(id){
   drawMap(); drawChart();   // 重画以移动选中圈
 }
 
-/* ---------- 筛选按钮 ---------- */
-document.querySelectorAll('#filters button').forEach(b => b.onclick = () => {
+/* ---------- 筛选与视图切换 ---------- */
+let view = 'route';   // route | weather | emotion | works
+document.querySelectorAll('#filters button[data-f]').forEach(b => b.onclick = () => {
   filter = b.dataset.f;
-  document.querySelectorAll('#filters button').forEach(x => x.classList.toggle('on', x === b));
-  updateCount(); drawMap(); drawChart();
+  document.querySelectorAll('#filters button[data-f]').forEach(x => x.classList.toggle('on', x === b));
+  updateCount(); render();
 });
+document.querySelectorAll('#filters button[data-v]').forEach(b => b.onclick = () => {
+  view = b.dataset.v;
+  document.querySelectorAll('#filters button[data-v]').forEach(x => x.classList.toggle('on', x === b));
+  render();
+});
+function render(){
+  const isWorks = view === 'works';
+  document.getElementById('chartwrap').style.display = isWorks ? 'none' : '';
+  document.getElementById('worksview').style.display = isWorks ? '' : 'none';
+  if (isWorks){ drawWorks(); return; }
+  document.getElementById('charttitle').textContent =
+    view === 'route'  ? '時 間 · 兩條泳道（五 → 十二月；日期按「月＋日/31」線性排布）' :
+    view === 'weather'? '天 氣 × 活 動（同日並見次數；琥珀愈亮愈密）' :
+                        '情 感 · 兩條泳道（形狀即情緒；沿時間起伏）';
+  if (view === 'weather') drawWeather();
+  else if (view === 'emotion') drawEmotion();
+  else drawChart();
+}
 function updateCount(){
   document.getElementById('count').textContent = EV.filter(visible).length + ' / ' + EV.length + ' 條';
 }
@@ -431,7 +646,7 @@ function layout(){
     sv.style.width = sv.parentNode.clientWidth + 'px';
     sv.style.height = sv.parentNode.clientHeight + 'px';
   });
-  drawMap(); drawChart();
+  render();
 }
 let rt = null;
 addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(layout, 120); });

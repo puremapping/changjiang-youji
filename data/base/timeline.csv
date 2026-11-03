@@ -1,0 +1,35 @@
+﻿id,kind,ref_id,year,month,day,date_orig,text,note
+tl-001,book,w-ru-shu-ji,1170,,,《入蜀記》行程自「乾道五年十二月六日」至「十月二十七日」（卷 1/6），逐日 156 条见 events 表；总日历天数未核算（农历大小月未查历表，按纪律不推算）,《入蜀記》行程自「乾道五年十二月六日」至「十月二十七日」（卷 1/6），逐日 156 条见 events 表；总日历天数未核算（农历大小月未查历表，按纪律不推算）,起讫日转写自 events 表首/尾条 month+date_raw（去尾标点）；未做农历→公历换算；总天数未核算。
+tl-002,book,w-wu-chuan-lu,1177,,,《吳船錄》行程自「淳熙丁酉歲五月二十九日戊辰」至「十月己巳」（卷 1/2），逐日 110 条见 events 表；总日历天数未核算（农历大小月未查历表，按纪律不推算）,《吳船錄》行程自「淳熙丁酉歲五月二十九日戊辰」至「十月己巳」（卷 1/2），逐日 110 条见 events 表；总日历天数未核算（农历大小月未查历表，按纪律不推算）,起讫日转写自 events 表首/尾条 month+date_raw（去尾标点）；未做农历→公历换算；总天数未核算。
+tl-003,work,w-chi-bi-fu,1082,7,15,壬戌之秋，七月既望,《赤壁賦》：游期 1082 7 15；成文 1082  （原文纪日 壬戌之秋，七月既望）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-004,work,w-gu-gu-tan,809,,,,《鈷鉧潭記》：游期 809  ；成文 809  （原文纪日 —）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-005,work,w-gu-gu-tan-xi-xiao-qiu,809,10,6,得西山後八日,《鈷鉧潭西小丘記》：游期 809 10 6；成文 809 10 （原文纪日 得西山後八日）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-006,work,w-hou-chi-bi-fu,1082,10,15,是歲十月之望,《後赤壁賦》：游期 1082 10 15；成文 1082  （原文纪日 是歲十月之望）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-007,work,w-jin-shan-jing-du,1642,,,,《金山競渡》：游期 1642  ；成文 明亡後追憶  （原文纪日 —）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-008,work,w-jin-shan-ye-xi,1629,8,16,崇禎二年中秋後一日,《金山夜戲》：游期 1629 8 16；成文 明亡後追憶  （原文纪日 崇禎二年中秋後一日）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-009,work,w-ru-shu-ji,1170,5,18,乾道六年閏五月十八日,《入蜀記》：游期 1170 5 18；成文 1170 5 18（原文纪日 乾道六年閏五月十八日）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-010,work,w-shi-de-xi-shan,809,9,28,今年九月二十八日,《始得西山宴遊記》：游期 809 9 28；成文 809 9 28（原文纪日 今年九月二十八日）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-011,work,w-shi-jian-ji,812,10,,,《石澗記》：游期 812 10 ；成文 812 10 （原文纪日 —）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-012,work,w-shi-qu-ji,812,10,,元和七年正月八日，蠲渠至大石。十月十九日，逾石得石泓小潭,《石渠記》：游期 812  ；成文 812 10 （原文纪日 元和七年正月八日，蠲渠至大石。十月十九日，逾石得石泓小潭）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-013,work,w-shi-zhong-shan-ji,1084,6,,元豐七年六月丁丑,《石鐘山記》：游期 1084 6 ；成文 1084  （原文纪日 元豐七年六月丁丑）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-014,work,w-wu-chuan-lu,1177,5,29,淳熙丁酉歲五月二十九日,《吳船錄》：游期 1177 5 29；成文 1177 5 29（原文纪日 淳熙丁酉歲五月二十九日）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-015,work,w-xiao-shi-cheng-shan,812,10,,,《小石城山記》：游期 812 10 ；成文 812 10 （原文纪日 —）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-016,work,w-you-huang-xi,813,5,16,元和八年五月十六日,《遊黃溪記》：游期 813  ；成文 813 5 16（原文纪日 元和八年五月十六日）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-017,work,w-you-jin-shan-si,1071,11,,,《遊金山寺》：游期 1071 11 ；成文 1071  （原文纪日 —）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-018,work,w-yuan-jia-ke,812,10,,,《袁家渴記》：游期 812 10 ；成文 812 10 （原文纪日 —）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-019,work,w-zhi-xiao-qiu-xiao-shi-tan,809,10,,,《至小丘西小石潭記》：游期 809 10 ；成文 809 10 （原文纪日 —）,visit_*/write_* 与 date_orig 直接取自 works_v1，未重新考据；张岱两篇 write 年空缺=明亡后追忆（记时≠写时）。
+tl-020,life,p-fan-chengda,1126,,,,范成生生（吴）,依据：REFERENCES.md §4 标题生卒（1126–1193）。
+tl-021,life,p-fan-chengda,1150,,,,范成大绍圣元年进士及第,依据：绍圣元年（1150）登进士，通行年谱；把握不足，标通行说法。
+tl-022,life,p-fan-chengda,1193,,,,范成大卒,依据：REFERENCES.md §4 标题生卒（1126–1193）。
+tl-023,life,p-liu-zong-yuan,773,,,,柳宗元生,依据：REFERENCES.md §1 标题生卒（773–819）＋《旧唐书·柳宗元传》。
+tl-024,life,p-liu-zong-yuan,805,,,,柳宗元和科进士及第,依据：元和元年（805）登进士第，通行年谱；见 REFERENCES.md §1 引校注本年谱。
+tl-025,life,p-liu-zong-yuan,819,,,,柳宗元卒（柳州）,依据：REFERENCES.md §1 标题生卒（773–819）。
+tl-026,life,p-lu-you,1125,,,,陆游生（山阴）,依据：REFERENCES.md §3 标题生卒（1125–1210）。
+tl-027,life,p-lu-you,1166,,,,陆游乾道二年进士及第,依据：乾道二年（1166）登进士，通行年谱；依据查不到逐字原文者，标通行说法。
+tl-028,life,p-lu-you,1210,,,,陆游卒,依据：REFERENCES.md §3 标题生卒（1125–1210）。
+tl-029,life,p-su-shi,1037,,,,苏轼生,依据：REFERENCES.md §2 标题生卒（1037–1101）。
+tl-030,life,p-su-shi,1057,,,,苏轼嘉祐二年进士及第,依据：嘉祐二年（1057）登进士，通行年谱；见 REFERENCES.md §2 列孔凡礼《苏轼年谱》。
+tl-031,life,p-su-shi,1101,,,,苏轼卒,依据：REFERENCES.md §2 标题生卒（1037–1101）。
+tl-032,life,p-zhang-dai,1597,,,,张岱生（山阴）,依据：REFERENCES.md §5 标题生卒（1597–1679）。
+tl-033,life,p-zhang-dai,1644,,,,明亡（南京/杭州相继陷落）,依据：1644 明亡为确定史事，张岱此后追忆著述；见 REFERENCES.md §5「记时≠写时」。
+tl-034,life,p-zhang-dai,1679,,,,张岱卒,依据：REFERENCES.md §5 标题生卒（1597–1679）。

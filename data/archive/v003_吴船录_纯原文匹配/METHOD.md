@@ -210,7 +210,7 @@
 ## 十、复现
 
 ```bash
-cd "D:/fs/workspace/projects/travelog_visualization/data/archive/v003_吴船录_纯原文匹配"
+cd "（关联项目）/data/archive/v003_吴船录_纯原文匹配"
 python script.py          # 输出 data/events.json、data/events.csv 并打印全部统计
 ```
 

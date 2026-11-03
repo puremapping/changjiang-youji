@@ -1,0 +1,4641 @@
+[
+  {
+    "id": "pl-法雲寺",
+    "name": "法雲寺",
+    "name_variants": [
+      "法雲寺"
+    ],
+    "modern_name": "杭州",
+    "lat": 30.25,
+    "lon": 120.1,
+    "place_type": "寺",
+    "note": "杭州法雲寺（西溪），陸游晚行至。"
+  },
+  {
+    "id": "pl-柯橋館",
+    "name": "柯橋館",
+    "name_variants": [
+      "柯橋館"
+    ],
+    "modern_name": "杭州",
+    "lat": 30.25,
+    "lon": 120.1,
+    "place_type": "館",
+    "note": "臨安柯橋，舟宿處。"
+  },
+  {
+    "id": "pl-錢清",
+    "name": "錢清",
+    "name_variants": [
+      "錢清"
+    ],
+    "modern_name": "杭州",
+    "lat": 30.24,
+    "lon": 120.14,
+    "place_type": "鎮",
+    "note": "臨安錢清鎮，陸游過浮橋。"
+  },
+  {
+    "id": "pl-浮橋",
+    "name": "浮橋",
+    "name_variants": [
+      "浮橋"
+    ],
+    "modern_name": "杭州",
+    "lat": 30.24,
+    "lon": 120.14,
+    "place_type": "橋",
+    "note": "錢清浮橋。"
+  },
+  {
+    "id": "pl-蕭山縣",
+    "name": "蕭山縣",
+    "name_variants": [
+      "蕭山縣"
+    ],
+    "modern_name": "杭州蕭山",
+    "lat": 30.18,
+    "lon": 120.27,
+    "place_type": "縣",
+    "note": "臨安蕭山縣。"
+  },
+  {
+    "id": "pl-夢筆驛",
+    "name": "夢筆驛",
+    "name_variants": [
+      "夢筆驛"
+    ],
+    "modern_name": "杭州",
+    "lat": 30.25,
+    "lon": 120.1,
+    "place_type": "驛",
+    "note": "臨安夢筆驛。"
+  },
+  {
+    "id": "pl-西興鎮",
+    "name": "西興鎮",
+    "name_variants": [
+      "西興鎮"
+    ],
+    "modern_name": "杭州",
+    "lat": 30.24,
+    "lon": 120.14,
+    "place_type": "鎮",
+    "note": "臨江西興鎮。"
+  },
+  {
+    "id": "pl-北關",
+    "name": "北關",
+    "name_variants": [
+      "北關"
+    ],
+    "modern_name": "臨安",
+    "lat": 30.25,
+    "lon": 120.14,
+    "place_type": "門",
+    "note": "臨安北關。"
+  },
+  {
+    "id": "pl-長橋寺",
+    "name": "長橋寺",
+    "name_variants": [
+      "長橋寺"
+    ],
+    "modern_name": "臨安",
+    "lat": 30.25,
+    "lon": 120.14,
+    "place_type": "寺",
+    "note": "臨安長橋寺。"
+  },
+  {
+    "id": "pl-湧金門",
+    "name": "湧金門",
+    "name_variants": [
+      "湧金門"
+    ],
+    "modern_name": "臨安",
+    "lat": 30.25,
+    "lon": 120.14,
+    "place_type": "門",
+    "note": "臨安湧金門，晚出。"
+  },
+  {
+    "id": "pl-闇門",
+    "name": "闇門",
+    "name_variants": [
+      "闇門"
+    ],
+    "modern_name": "臨安",
+    "lat": 30.25,
+    "lon": 120.14,
+    "place_type": "門",
+    "note": "臨安（杭州）闇門，陸游出此門買小舟。"
+  },
+  {
+    "id": "pl-三閘",
+    "name": "三閘",
+    "name_variants": [
+      "三閘"
+    ],
+    "modern_name": "臨安",
+    "lat": 30.25,
+    "lon": 120.14,
+    "place_type": "閘",
+    "note": "臨安三閘，舟出。"
+  },
+  {
+    "id": "pl-臨平",
+    "name": "臨平",
+    "name_variants": [
+      "臨平"
+    ],
+    "modern_name": "杭州臨平",
+    "lat": 30.42,
+    "lon": 120.3,
+    "place_type": "縣",
+    "note": "臨平，平江。"
+  },
+  {
+    "id": "pl-臨安",
+    "name": "臨安",
+    "name_variants": [
+      "臨安"
+    ],
+    "modern_name": "杭州",
+    "lat": 30.25,
+    "lon": 120.15,
+    "place_type": "州",
+    "note": "臨安（今杭州），陸游離鄉里之地。"
+  },
+  {
+    "id": "pl-赤岸",
+    "name": "赤岸",
+    "name_variants": [
+      "赤岸"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "岸",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-長河堰",
+    "name": "長河堰",
+    "name_variants": [
+      "長河堰"
+    ],
+    "modern_name": "湖州",
+    "lat": 30.85,
+    "lon": 120.1,
+    "place_type": "堰",
+    "note": "湖州長河堰。"
+  },
+  {
+    "id": "pl-秀州",
+    "name": "秀州",
+    "name_variants": [
+      "秀州"
+    ],
+    "modern_name": "嘉兴",
+    "lat": 30.75,
+    "lon": 120.75,
+    "place_type": "州",
+    "note": "秀州（今嘉兴），早抵。"
+  },
+  {
+    "id": "pl-禾興館",
+    "name": "禾興館",
+    "name_variants": [
+      "禾興館"
+    ],
+    "modern_name": "嘉兴",
+    "lat": 30.75,
+    "lon": 120.75,
+    "place_type": "館",
+    "note": "秀州禾興館，泊。"
+  },
+  {
+    "id": "pl-八尺",
+    "name": "八尺",
+    "name_variants": [
+      "八尺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-合路",
+    "name": "合路",
+    "name_variants": [
+      "合路"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-平望",
+    "name": "平望",
+    "name_variants": [
+      "平望"
+    ],
+    "modern_name": "苏州平望",
+    "lat": 31.0,
+    "lon": 120.47,
+    "place_type": "鎮",
+    "note": "平望鎮，今蘇州平望。"
+  },
+  {
+    "id": "pl-吳江縣",
+    "name": "吳江縣",
+    "name_variants": [
+      "吳江縣"
+    ],
+    "modern_name": "吴江",
+    "lat": 30.95,
+    "lon": 120.6,
+    "place_type": "縣",
+    "note": "吳江縣（今蘇州吳江區）。"
+  },
+  {
+    "id": "pl-震澤",
+    "name": "震澤",
+    "name_variants": [
+      "震澤"
+    ],
+    "modern_name": "苏州",
+    "lat": 30.95,
+    "lon": 120.6,
+    "place_type": "湖",
+    "note": "震澤（太湖舊名）。"
+  },
+  {
+    "id": "pl-長橋",
+    "name": "長橋",
+    "name_variants": [
+      "長橋"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "橋",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-尹橋",
+    "name": "尹橋",
+    "name_variants": [
+      "尹橋"
+    ],
+    "modern_name": "苏州",
+    "lat": 30.95,
+    "lon": 120.6,
+    "place_type": "橋",
+    "note": "尹橋，今蘇州。"
+  },
+  {
+    "id": "pl-平江",
+    "name": "平江",
+    "name_variants": [
+      "平江"
+    ],
+    "modern_name": "苏州",
+    "lat": 31.3,
+    "lon": 120.6,
+    "place_type": "州",
+    "note": "平江（蘇州舊名）。"
+  },
+  {
+    "id": "pl-盤門",
+    "name": "盤門",
+    "name_variants": [
+      "盤門"
+    ],
+    "modern_name": "苏州",
+    "lat": 31.29,
+    "lon": 120.58,
+    "place_type": "門",
+    "note": "蘇州盤門。"
+  },
+  {
+    "id": "pl-武丘",
+    "name": "武丘",
+    "name_variants": [
+      "武丘"
+    ],
+    "modern_name": "苏州",
+    "lat": 31.3,
+    "lon": 120.6,
+    "place_type": "山",
+    "note": "蘇州武丘（虎丘舊名）。"
+  },
+  {
+    "id": "pl-楓橋寺",
+    "name": "楓橋寺",
+    "name_variants": [
+      "楓橋寺"
+    ],
+    "modern_name": "苏州",
+    "lat": 31.31,
+    "lon": 120.55,
+    "place_type": "寺",
+    "note": "蘇州楓橋寺。"
+  },
+  {
+    "id": "pl-楓橋",
+    "name": "楓橋",
+    "name_variants": [
+      "楓橋"
+    ],
+    "modern_name": "苏州",
+    "lat": 31.31,
+    "lon": 120.55,
+    "place_type": "橋",
+    "note": "蘇州楓橋。"
+  },
+  {
+    "id": "pl-望亭",
+    "name": "望亭",
+    "name_variants": [
+      "望亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-許市",
+    "name": "許市",
+    "name_variants": [
+      "許市"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "市",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-常州",
+    "name": "常州",
+    "name_variants": [
+      "常州"
+    ],
+    "modern_name": "常州",
+    "lat": 31.78,
+    "lon": 119.97,
+    "place_type": "州",
+    "note": "常州。"
+  },
+  {
+    "id": "pl-東嶽廟",
+    "name": "東嶽廟",
+    "name_variants": [
+      "東嶽廟"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "廟",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-崇勝寺",
+    "name": "崇勝寺",
+    "name_variants": [
+      "崇勝寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-奔牛閘",
+    "name": "奔牛閘",
+    "name_variants": [
+      "奔牛閘"
+    ],
+    "modern_name": "常州",
+    "lat": 31.78,
+    "lon": 119.97,
+    "place_type": "閘",
+    "note": "常州奔牛閘。"
+  },
+  {
+    "id": "pl-奔牛",
+    "name": "奔牛",
+    "name_variants": [
+      "奔牛"
+    ],
+    "modern_name": "常州",
+    "lat": 31.78,
+    "lon": 119.97,
+    "place_type": "處",
+    "note": "常州奔牛。"
+  },
+  {
+    "id": "pl-呂城閘",
+    "name": "呂城閘",
+    "name_variants": [
+      "呂城閘",
+      "呂城"
+    ],
+    "modern_name": "常州",
+    "lat": 31.78,
+    "lon": 119.97,
+    "place_type": "閘",
+    "note": "呂城閘（運河閘），四庫本「吕城」。"
+  },
+  {
+    "id": "pl-丹陽",
+    "name": "丹陽",
+    "name_variants": [
+      "丹陽"
+    ],
+    "modern_name": "丹阳",
+    "lat": 31.59,
+    "lon": 119.56,
+    "place_type": "縣",
+    "note": "丹陽縣（今丹陽市）。"
+  },
+  {
+    "id": "pl-陵口",
+    "name": "陵口",
+    "name_variants": [
+      "陵口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-錢塘",
+    "name": "錢塘",
+    "name_variants": [
+      "錢塘"
+    ],
+    "modern_name": "杭州",
+    "lat": 30.25,
+    "lon": 120.15,
+    "place_type": "江",
+    "note": "錢塘江（運河）。"
+  },
+  {
+    "id": "pl-夾岡",
+    "name": "夾岡",
+    "name_variants": [
+      "夾岡"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-新豐",
+    "name": "新豐",
+    "name_variants": [
+      "新豐"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "鎮",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-鎮江",
+    "name": "鎮江",
+    "name_variants": [
+      "鎮江",
+      "鎮江府"
+    ],
+    "modern_name": "镇江",
+    "lat": 32.19,
+    "lon": 119.45,
+    "place_type": "州",
+    "note": "鎮江（京口），今鎮江市。"
+  },
+  {
+    "id": "pl-西驛",
+    "name": "西驛",
+    "name_variants": [
+      "西驛"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "驛",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-潮閘",
+    "name": "潮閘",
+    "name_variants": [
+      "潮閘"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "閘",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-衛公堂",
+    "name": "衛公堂",
+    "name_variants": [
+      "衛公堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "堂",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-壽丘",
+    "name": "壽丘",
+    "name_variants": [
+      "壽丘"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-甘露寺",
+    "name": "甘露寺",
+    "name_variants": [
+      "甘露寺"
+    ],
+    "modern_name": "镇江",
+    "lat": 32.19,
+    "lon": 119.45,
+    "place_type": "寺",
+    "note": "鎮江甘露寺。"
+  },
+  {
+    "id": "pl-多景樓",
+    "name": "多景樓",
+    "name_variants": [
+      "多景樓"
+    ],
+    "modern_name": "镇江",
+    "lat": 32.19,
+    "lon": 119.45,
+    "place_type": "樓",
+    "note": "鎮江多景樓（甘露寺內）。"
+  },
+  {
+    "id": "pl-英靈助順王祠",
+    "name": "英靈助順王祠",
+    "name_variants": [
+      "英靈助順王祠"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "祠",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-金山",
+    "name": "金山",
+    "name_variants": [
+      "金山"
+    ],
+    "modern_name": "镇江",
+    "lat": 32.21,
+    "lon": 119.44,
+    "place_type": "山",
+    "note": "鎮江金山寺所在山。"
+  },
+  {
+    "id": "pl-玉鑑堂",
+    "name": "玉鑑堂",
+    "name_variants": [
+      "玉鑑堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "堂",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-雄跨閣",
+    "name": "雄跨閣",
+    "name_variants": [
+      "雄跨閣"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "閣",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-瓜洲",
+    "name": "瓜洲",
+    "name_variants": [
+      "瓜洲"
+    ],
+    "modern_name": "扬州",
+    "lat": 32.33,
+    "lon": 119.47,
+    "place_type": "鎮",
+    "note": "瓜洲（今揚州高橋），運河出口。"
+  },
+  {
+    "id": "pl-真州",
+    "name": "真州",
+    "name_variants": [
+      "真州"
+    ],
+    "modern_name": "仪征",
+    "lat": 32.14,
+    "lon": 119.2,
+    "place_type": "州",
+    "note": "真州（今儀征）。"
+  },
+  {
+    "id": "pl-鑒遠亭",
+    "name": "鑒遠亭",
+    "name_variants": [
+      "鑒遠亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-東園",
+    "name": "東園",
+    "name_variants": [
+      "東園"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "園",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-下蜀",
+    "name": "下蜀",
+    "name_variants": [
+      "下蜀"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-報恩光孝寺",
+    "name": "報恩光孝寺",
+    "name_variants": [
+      "報恩光孝寺"
+    ],
+    "modern_name": "南京",
+    "lat": 32.06,
+    "lon": 118.8,
+    "place_type": "寺",
+    "note": "南京（建康）報恩寺，今大報恩寺。"
+  },
+  {
+    "id": "pl-壯觀",
+    "name": "壯觀",
+    "name_variants": [
+      "壯觀"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-平易堂",
+    "name": "平易堂",
+    "name_variants": [
+      "平易堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "堂",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-澄瀾閣",
+    "name": "澄瀾閣",
+    "name_variants": [
+      "澄瀾閣"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "閣",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-瓜步",
+    "name": "瓜步",
+    "name_variants": [
+      "瓜步",
+      "瓜步山"
+    ],
+    "modern_name": "仪征",
+    "lat": 32.14,
+    "lon": 119.2,
+    "place_type": "山",
+    "note": "瓜步山（今儀征），四庫本「瓜歩」。"
+  },
+  {
+    "id": "pl-長蘆",
+    "name": "長蘆",
+    "name_variants": [
+      "長蘆"
+    ],
+    "modern_name": "南京",
+    "lat": 32.06,
+    "lon": 118.8,
+    "place_type": "處",
+    "note": "長蘆，南京長蘆洲。"
+  },
+  {
+    "id": "pl-竹篠港",
+    "name": "竹篠港",
+    "name_variants": [
+      "竹篠港"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "港",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-建康",
+    "name": "建康",
+    "name_variants": [
+      "建康",
+      "建康府",
+      "金陵",
+      "江宁",
+      "金川"
+    ],
+    "modern_name": "南京",
+    "lat": 32.06,
+    "lon": 118.8,
+    "place_type": "州",
+    "note": "建康（今南京），同形異稱歸一（金陵/建康/江寧同屬一處）。"
+  },
+  {
+    "id": "pl-龍灣",
+    "name": "龍灣",
+    "name_variants": [
+      "龍灣"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-石頭山",
+    "name": "石頭山",
+    "name_variants": [
+      "石頭山",
+      "石頭"
+    ],
+    "modern_name": "南京",
+    "lat": 32.04,
+    "lon": 118.78,
+    "place_type": "山",
+    "note": "南京石頭山。"
+  },
+  {
+    "id": "pl-龍光門",
+    "name": "龍光門",
+    "name_variants": [
+      "龍光門"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "門",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-秦淮亭",
+    "name": "秦淮亭",
+    "name_variants": [
+      "秦淮亭"
+    ],
+    "modern_name": "南京",
+    "lat": 32.04,
+    "lon": 118.78,
+    "place_type": "亭",
+    "note": "秦淮河邊亭。"
+  },
+  {
+    "id": "pl-天慶觀",
+    "name": "天慶觀",
+    "name_variants": [
+      "天慶觀"
+    ],
+    "modern_name": "南京",
+    "lat": 32.04,
+    "lon": 118.78,
+    "place_type": "觀",
+    "note": "南京天慶觀。"
+  },
+  {
+    "id": "pl-清涼廣慧寺",
+    "name": "清涼廣慧寺",
+    "name_variants": [
+      "清涼廣慧寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-鍾山",
+    "name": "鍾山",
+    "name_variants": [
+      "鍾山"
+    ],
+    "modern_name": "南京",
+    "lat": 32.06,
+    "lon": 118.84,
+    "place_type": "山",
+    "note": "南京鍾山。"
+  },
+  {
+    "id": "pl-半山",
+    "name": "半山",
+    "name_variants": [
+      "半山"
+    ],
+    "modern_name": "南京",
+    "lat": 32.06,
+    "lon": 118.84,
+    "place_type": "山",
+    "note": "南京半山。"
+  },
+  {
+    "id": "pl-保寧",
+    "name": "保寧",
+    "name_variants": [
+      "保寧"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "鎮",
+    "note": "未定位于现代地名（四庫本保寜）。"
+  },
+  {
+    "id": "pl-賞心亭",
+    "name": "賞心亭",
+    "name_variants": [
+      "賞心亭"
+    ],
+    "modern_name": "南京",
+    "lat": 32.04,
+    "lon": 118.78,
+    "place_type": "亭",
+    "note": "南京賞心亭（秦淮河上）。"
+  },
+  {
+    "id": "pl-大城岡",
+    "name": "大城岡",
+    "name_variants": [
+      "大城岡"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "岡",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-太平州",
+    "name": "太平州",
+    "name_variants": [
+      "太平州"
+    ],
+    "modern_name": "当涂",
+    "lat": 31.49,
+    "lon": 118.28,
+    "place_type": "州",
+    "note": "太平州（今当涂），姑熟。"
+  },
+  {
+    "id": "pl-三山磯",
+    "name": "三山磯",
+    "name_variants": [
+      "三山磯"
+    ],
+    "modern_name": "当涂",
+    "lat": 31.49,
+    "lon": 118.28,
+    "place_type": "磯",
+    "note": "太平州三山磯。"
+  },
+  {
+    "id": "pl-三山",
+    "name": "三山",
+    "name_variants": [
+      "三山"
+    ],
+    "modern_name": "当涂",
+    "lat": 31.49,
+    "lon": 118.28,
+    "place_type": "山",
+    "note": "太平州三山，同形異稱歸一。"
+  },
+  {
+    "id": "pl-慈姥磯",
+    "name": "慈姥磯",
+    "name_variants": [
+      "慈姥磯"
+    ],
+    "modern_name": "当涂",
+    "lat": 31.49,
+    "lon": 118.28,
+    "place_type": "磯",
+    "note": "太平州慈姥磯。"
+  },
+  {
+    "id": "pl-閱武亭",
+    "name": "閱武亭",
+    "name_variants": [
+      "閱武亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-當塗",
+    "name": "當塗",
+    "name_variants": [
+      "當塗"
+    ],
+    "modern_name": "当涂",
+    "lat": 31.49,
+    "lon": 118.28,
+    "place_type": "縣",
+    "note": "当涂县，姑熟。"
+  },
+  {
+    "id": "pl-凌歊臺",
+    "name": "凌歊臺",
+    "name_variants": [
+      "凌歊臺"
+    ],
+    "modern_name": "当涂",
+    "lat": 31.49,
+    "lon": 118.28,
+    "place_type": "臺",
+    "note": "当涂凌歊臺。"
+  },
+  {
+    "id": "pl-李太白祠堂",
+    "name": "李太白祠堂",
+    "name_variants": [
+      "李太白祠堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "祠",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-大信口",
+    "name": "大信口",
+    "name_variants": [
+      "大信口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "口",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-姑熟溪",
+    "name": "姑熟溪",
+    "name_variants": [
+      "姑熟溪"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "溪",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-蕪湖",
+    "name": "蕪湖",
+    "name_variants": [
+      "蕪湖",
+      "芜湖"
+    ],
+    "modern_name": "芜湖",
+    "lat": 31.35,
+    "lon": 118.4,
+    "place_type": "城",
+    "note": "蕪湖（今蕪湖市），四庫本「蕪湖」。"
+  },
+  {
+    "id": "pl-梟磯",
+    "name": "梟磯",
+    "name_variants": [
+      "梟磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-東寺",
+    "name": "東寺",
+    "name_variants": [
+      "東寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-王敦城",
+    "name": "王敦城",
+    "name_variants": [
+      "王敦城"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "城",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-荻港",
+    "name": "荻港",
+    "name_variants": [
+      "荻港"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "港",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-繁昌縣",
+    "name": "繁昌縣",
+    "name_variants": [
+      "繁昌縣"
+    ],
+    "modern_name": "繁昌",
+    "lat": 31.38,
+    "lon": 118.31,
+    "place_type": "縣",
+    "note": "繁昌縣（今蕪湖繁昌區）。"
+  },
+  {
+    "id": "pl-龍廟",
+    "name": "龍廟",
+    "name_variants": [
+      "龍廟"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "廟",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-延禧觀",
+    "name": "延禧觀",
+    "name_variants": [
+      "延禧觀"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "觀",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-丁家洲",
+    "name": "丁家洲",
+    "name_variants": [
+      "丁家洲"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "洲",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-銅陵縣",
+    "name": "銅陵縣",
+    "name_variants": [
+      "銅陵縣"
+    ],
+    "modern_name": "铜陵",
+    "lat": 30.95,
+    "lon": 117.8,
+    "place_type": "縣",
+    "note": "銅陵縣（今銅陵市）。"
+  },
+  {
+    "id": "pl-水洪口",
+    "name": "水洪口",
+    "name_variants": [
+      "水洪口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "口",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-梅根港",
+    "name": "梅根港",
+    "name_variants": [
+      "梅根港"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "港",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-陽山磯",
+    "name": "陽山磯",
+    "name_variants": [
+      "陽山磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-池州",
+    "name": "池州",
+    "name_variants": [
+      "池州",
+      "池口",
+      "池口"
+    ],
+    "modern_name": "池州",
+    "lat": 30.66,
+    "lon": 117.49,
+    "place_type": "州",
+    "note": "池州（今池州市）。"
+  },
+  {
+    "id": "pl-稅務亭",
+    "name": "稅務亭",
+    "name_variants": [
+      "稅務亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-采石",
+    "name": "采石",
+    "name_variants": [
+      "采石"
+    ],
+    "modern_name": "当涂",
+    "lat": 31.49,
+    "lon": 118.28,
+    "place_type": "山",
+    "note": "采石磯（今当涂）。"
+  },
+  {
+    "id": "pl-光孝寺",
+    "name": "光孝寺",
+    "name_variants": [
+      "光孝寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-弄水亭",
+    "name": "弄水亭",
+    "name_variants": [
+      "弄水亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-懷家洑",
+    "name": "懷家洑",
+    "name_variants": [
+      "懷家洑"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-長風沙",
+    "name": "長風沙",
+    "name_variants": [
+      "長風沙"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-湓浦",
+    "name": "湓浦",
+    "name_variants": [
+      "湓浦"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-雁翅夾",
+    "name": "雁翅夾",
+    "name_variants": [
+      "雁翅夾",
+      "鴈翅"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名（四庫本鴈翅）。"
+  },
+  {
+    "id": "pl-皖口",
+    "name": "皖口",
+    "name_variants": [
+      "皖口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "口",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-皖山",
+    "name": "皖山",
+    "name_variants": [
+      "皖山"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-馬當",
+    "name": "馬當",
+    "name_variants": [
+      "馬當"
+    ],
+    "modern_name": "池州",
+    "lat": 30.66,
+    "lon": 117.49,
+    "place_type": "處",
+    "note": "馬當磯（今池州東）。"
+  },
+  {
+    "id": "pl-東流縣",
+    "name": "東流縣",
+    "name_variants": [
+      "東流縣"
+    ],
+    "modern_name": "东至",
+    "lat": 30.13,
+    "lon": 117.1,
+    "place_type": "縣",
+    "note": "東流縣（今池州至東）。"
+  },
+  {
+    "id": "pl-獅子磯",
+    "name": "獅子磯",
+    "name_variants": [
+      "獅子磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-馬當廟",
+    "name": "馬當廟",
+    "name_variants": [
+      "馬當廟"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "廟",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-沙夾",
+    "name": "沙夾",
+    "name_variants": [
+      "沙夾"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-烽火磯",
+    "name": "烽火磯",
+    "name_variants": [
+      "烽火磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-澎浪磯",
+    "name": "澎浪磯",
+    "name_variants": [
+      "澎浪磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-江州",
+    "name": "江州",
+    "name_variants": [
+      "江州"
+    ],
+    "modern_name": "九江",
+    "lat": 29.7,
+    "lon": 116.0,
+    "place_type": "州",
+    "note": "江州（今九江），琵琶亭所在。"
+  },
+  {
+    "id": "pl-琵琶亭",
+    "name": "琵琶亭",
+    "name_variants": [
+      "琵琶亭"
+    ],
+    "modern_name": "九江",
+    "lat": 29.7,
+    "lon": 116.0,
+    "place_type": "亭",
+    "note": "九江琵琶亭。"
+  },
+  {
+    "id": "pl-高遠亭",
+    "name": "高遠亭",
+    "name_variants": [
+      "高遠亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-庾樓",
+    "name": "庾樓",
+    "name_variants": [
+      "庾樓"
+    ],
+    "modern_name": "九江",
+    "lat": 29.7,
+    "lon": 116.0,
+    "place_type": "樓",
+    "note": "九江庾樓。"
+  },
+  {
+    "id": "pl-太平興國宮",
+    "name": "太平興國宮",
+    "name_variants": [
+      "太平興國宮"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "宮",
+    "note": "未定位于现代地名（四庫本太平興國宫）。"
+  },
+  {
+    "id": "pl-新橋市",
+    "name": "新橋市",
+    "name_variants": [
+      "新橋市"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "市",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-清虛菴",
+    "name": "清虛菴",
+    "name_variants": [
+      "清虛菴",
+      "清虛庵"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "庵",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-雲無心堂",
+    "name": "雲無心堂",
+    "name_variants": [
+      "雲無心堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "堂",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-西林",
+    "name": "西林",
+    "name_variants": [
+      "西林",
+      "西林寺",
+      "東林",
+      "東林寺",
+      "過溪亭",
+      "太平宮",
+      "草市",
+      "清虛庵"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "九江南林山（廬山南麓）東林寺/西林寺一帶，多處同形異稱歸一。"
+  },
+  {
+    "id": "pl-赤沙湖",
+    "name": "赤沙湖",
+    "name_variants": [
+      "赤沙湖"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "湖",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-夔州",
+    "name": "夔州",
+    "name_variants": [
+      "夔州"
+    ],
+    "modern_name": "奉节",
+    "lat": 31.05,
+    "lon": 109.5,
+    "place_type": "州",
+    "note": "夔州（今奉節），瞿唐峽上。"
+  },
+  {
+    "id": "pl-艣臍洑",
+    "name": "艣臍洑",
+    "name_variants": [
+      "艣臍洑"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名（四庫本艣臍洑，譯注「橹臍洑」）。"
+  },
+  {
+    "id": "pl-富池",
+    "name": "富池",
+    "name_variants": [
+      "富池"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-旌教寺",
+    "name": "旌教寺",
+    "name_variants": [
+      "旌教寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-劉官磯",
+    "name": "劉官磯",
+    "name_variants": [
+      "劉官磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-蘄口鎮",
+    "name": "蘄口鎮",
+    "name_variants": [
+      "蘄口鎮",
+      "蕲口",
+      "蘄口市"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "鎮",
+    "note": "未定位于现代地名（四庫本蘄口鎮，譯注「蕲口镇」）。"
+  },
+  {
+    "id": "pl-龍眼磯",
+    "name": "龍眼磯",
+    "name_variants": [
+      "龍眼磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-散花洲",
+    "name": "散花洲",
+    "name_variants": [
+      "散花洲"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "洲",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-道士磯",
+    "name": "道士磯",
+    "name_variants": [
+      "道士磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-巴河",
+    "name": "巴河",
+    "name_variants": [
+      "巴河"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-回風磯",
+    "name": "回風磯",
+    "name_variants": [
+      "回風磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-蘭溪",
+    "name": "蘭溪",
+    "name_variants": [
+      "蘭溪"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-黃州",
+    "name": "黃州",
+    "name_variants": [
+      "黃州",
+      "臨皋亭",
+      "雪堂東坡",
+      "竹樓"
+    ],
+    "modern_name": "黄冈",
+    "lat": 30.45,
+    "lon": 114.87,
+    "place_type": "州",
+    "note": "黃州（今黃岡），蘇軾貶謫地，赤壁賦/后赤壁賦作于此。"
+  },
+  {
+    "id": "pl-安國寺",
+    "name": "安國寺",
+    "name_variants": [
+      "安國寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-東坡",
+    "name": "東坡",
+    "name_variants": [
+      "東坡"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "同形異地：黃州東坡/蘇州東坡，按卷區分。"
+  },
+  {
+    "id": "pl-棲霞樓",
+    "name": "棲霞樓",
+    "name_variants": [
+      "棲霞樓"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "樓",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-竹樓",
+    "name": "竹樓",
+    "name_variants": [
+      "竹樓"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "樓",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-三江口",
+    "name": "三江口",
+    "name_variants": [
+      "三江口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "口",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-楊羅洑",
+    "name": "楊羅洑",
+    "name_variants": [
+      "楊羅洑"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名（四庫本楊羅洑，譯注「杨罗洑」）。"
+  },
+  {
+    "id": "pl-雙柳夾",
+    "name": "雙柳夾",
+    "name_variants": [
+      "雙柳夾",
+      "雙栁夾"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名（四庫本雙栁夾，譯注「双柳夹」）。"
+  },
+  {
+    "id": "pl-白楊夾口",
+    "name": "白楊夾口",
+    "name_variants": [
+      "白楊夾口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-青山磯",
+    "name": "青山磯",
+    "name_variants": [
+      "青山磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名（今武漢青山東）。"
+  },
+  {
+    "id": "pl-鄂州",
+    "name": "鄂州",
+    "name_variants": [
+      "鄂州",
+      "鄂渚"
+    ],
+    "modern_name": "鄂州",
+    "lat": 30.23,
+    "lon": 114.89,
+    "place_type": "州",
+    "note": "鄂州（今鄂州市），南樓。"
+  },
+  {
+    "id": "pl-奇章堂",
+    "name": "奇章堂",
+    "name_variants": [
+      "奇章堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "堂",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-南樓",
+    "name": "南樓",
+    "name_variants": [
+      "南樓"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "樓",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-石鏡亭",
+    "name": "石鏡亭",
+    "name_variants": [
+      "石鏡亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-漢陽門",
+    "name": "漢陽門",
+    "name_variants": [
+      "漢陽門"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "門",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-鸚鵡洲",
+    "name": "鸚鵡洲",
+    "name_variants": [
+      "鸚鵡洲"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "洲",
+    "note": "未定位于现代地名（武昌鸚鵡洲，存疑）。"
+  },
+  {
+    "id": "pl-謝家磯",
+    "name": "謝家磯",
+    "name_variants": [
+      "謝家磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-通濟口",
+    "name": "通濟口",
+    "name_variants": [
+      "通濟口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "口",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-新潭",
+    "name": "新潭",
+    "name_variants": [
+      "新潭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-下郡",
+    "name": "下郡",
+    "name_variants": [
+      "下郡"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-歸子保",
+    "name": "歸子保",
+    "name_variants": [
+      "歸子保"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-八疊洑",
+    "name": "八疊洑",
+    "name_variants": [
+      "八疊洑"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-畢家池",
+    "name": "畢家池",
+    "name_variants": [
+      "畢家池"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-雞鳴",
+    "name": "雞鳴",
+    "name_variants": [
+      "雞鳴"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-東場",
+    "name": "東場",
+    "name_variants": [
+      "東場",
+      "東塲"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名（四庫本東塲）。"
+  },
+  {
+    "id": "pl-建寧鎮",
+    "name": "建寧鎮",
+    "name_variants": [
+      "建寧鎮"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "鎮",
+    "note": "未定位于现代地名（四庫本建寜鎮）。"
+  },
+  {
+    "id": "pl-沌口",
+    "name": "沌口",
+    "name_variants": [
+      "沌口"
+    ],
+    "modern_name": "武汉",
+    "lat": 30.45,
+    "lon": 114.2,
+    "place_type": "口",
+    "note": "沌口（今武漢沌口）。"
+  },
+  {
+    "id": "pl-石首縣",
+    "name": "石首縣",
+    "name_variants": [
+      "石首縣"
+    ],
+    "modern_name": "石首",
+    "lat": 29.7,
+    "lon": 112.5,
+    "place_type": "縣",
+    "note": "石首縣（今石首市）。"
+  },
+  {
+    "id": "pl-塔子磯",
+    "name": "塔子磯",
+    "name_variants": [
+      "塔子磯"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "磯",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-后土祠",
+    "name": "后土祠",
+    "name_variants": [
+      "后土祠"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "祠",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-藕池",
+    "name": "藕池",
+    "name_variants": [
+      "藕池"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-柳子",
+    "name": "柳子",
+    "name_variants": [
+      "柳子",
+      "栁子"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名（四庫本栁子）。"
+  },
+  {
+    "id": "pl-公安",
+    "name": "公安",
+    "name_variants": [
+      "公安"
+    ],
+    "modern_name": "公安",
+    "lat": 29.97,
+    "lon": 112.33,
+    "place_type": "縣",
+    "note": "公安縣（長江與藕池湖交匯處）。"
+  },
+  {
+    "id": "pl-弭節亭",
+    "name": "弭節亭",
+    "name_variants": [
+      "弭節亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-二聖寺",
+    "name": "二聖寺",
+    "name_variants": [
+      "二聖寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-升子舖",
+    "name": "升子舖",
+    "name_variants": [
+      "升子舖"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-白湖",
+    "name": "白湖",
+    "name_variants": [
+      "白湖"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "湖",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-沙市",
+    "name": "沙市",
+    "name_variants": [
+      "沙市"
+    ],
+    "modern_name": "荆州",
+    "lat": 30.23,
+    "lon": 112.03,
+    "place_type": "處",
+    "note": "沙市（今荊州沙市）。"
+  },
+  {
+    "id": "pl-荊南",
+    "name": "荊南",
+    "name_variants": [
+      "荊南"
+    ],
+    "modern_name": "荆州",
+    "lat": 30.3,
+    "lon": 112.03,
+    "place_type": "處",
+    "note": "荊南（今荊州），四庫本「茟南」。"
+  },
+  {
+    "id": "pl-新橋馬監",
+    "name": "新橋馬監",
+    "name_variants": [
+      "新橋馬監"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-能仁院",
+    "name": "能仁院",
+    "name_variants": [
+      "能仁院"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-新河口",
+    "name": "新河口",
+    "name_variants": [
+      "新河口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-方城",
+    "name": "方城",
+    "name_variants": [
+      "方城"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-桂林灣",
+    "name": "桂林灣",
+    "name_variants": [
+      "桂林灣"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-灌子口",
+    "name": "灌子口",
+    "name_variants": [
+      "灌子口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-枝江",
+    "name": "枝江",
+    "name_variants": [
+      "枝江"
+    ],
+    "modern_name": "枝江",
+    "lat": 30.38,
+    "lon": 111.83,
+    "place_type": "縣",
+    "note": "枝江縣（今枝江市）。"
+  },
+  {
+    "id": "pl-峽州",
+    "name": "峽州",
+    "name_variants": [
+      "峽州",
+      "峽州"
+    ],
+    "modern_name": "宜昌",
+    "lat": 30.69,
+    "lon": 111.29,
+    "place_type": "州",
+    "note": "峽州（今宜昌三峽地區）。"
+  },
+  {
+    "id": "pl-楊木寨",
+    "name": "楊木寨",
+    "name_variants": [
+      "楊木寨"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-赤崖",
+    "name": "赤崖",
+    "name_variants": [
+      "赤崖"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-白羊市",
+    "name": "白羊市",
+    "name_variants": [
+      "白羊市"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-張文忠公天覺墓",
+    "name": "張文忠公天覺墓",
+    "name_variants": [
+      "張文忠公天覺墓"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "墓",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-荊門",
+    "name": "荊門",
+    "name_variants": [
+      "荊門"
+    ],
+    "modern_name": "宜昌",
+    "lat": 31.14,
+    "lon": 111.4,
+    "place_type": "州",
+    "note": "荊門（今荊門市），四庫本「荊南/荊門」。"
+  },
+  {
+    "id": "pl-五龍",
+    "name": "五龍",
+    "name_variants": [
+      "五龍"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-至喜亭",
+    "name": "至喜亭",
+    "name_variants": [
+      "至喜亭"
+    ],
+    "modern_name": "宜昌",
+    "lat": 30.69,
+    "lon": 111.29,
+    "place_type": "亭",
+    "note": "峽州至喜亭（三峽）。"
+  },
+  {
+    "id": "pl-漢景帝廟",
+    "name": "漢景帝廟",
+    "name_variants": [
+      "漢景帝廟"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "廟",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-西山甘泉寺",
+    "name": "西山甘泉寺",
+    "name_variants": [
+      "西山甘泉寺",
+      "甘泉寺"
+    ],
+    "modern_name": "宜昌",
+    "lat": 30.69,
+    "lon": 111.29,
+    "place_type": "寺",
+    "note": "西山甘泉寺（三峽）。"
+  },
+  {
+    "id": "pl-夷陵縣",
+    "name": "夷陵縣",
+    "name_variants": [
+      "夷陵縣"
+    ],
+    "modern_name": "宜昌",
+    "lat": 30.69,
+    "lon": 111.29,
+    "place_type": "縣",
+    "note": "夷陵縣（今宜昌夷陵區）。"
+  },
+  {
+    "id": "pl-楚塞樓",
+    "name": "楚塞樓",
+    "name_variants": [
+      "楚塞樓"
+    ],
+    "modern_name": "宜昌",
+    "lat": 30.69,
+    "lon": 111.29,
+    "place_type": "樓",
+    "note": "峽州楚塞樓。"
+  },
+  {
+    "id": "pl-石牌峽",
+    "name": "石牌峽",
+    "name_variants": [
+      "石牌峽",
+      "石碑峽"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "峽",
+    "note": "未定位于现代地名（四庫本石碑峽）。"
+  },
+  {
+    "id": "pl-下牢關",
+    "name": "下牢關",
+    "name_variants": [
+      "下牢關"
+    ],
+    "modern_name": "宜昌",
+    "lat": 30.69,
+    "lon": 111.29,
+    "place_type": "關",
+    "note": "峽州下牢關。"
+  },
+  {
+    "id": "pl-三游洞",
+    "name": "三游洞",
+    "name_variants": [
+      "三游洞"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "洞",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-黃牛廟",
+    "name": "黃牛廟",
+    "name_variants": [
+      "黃牛廟"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "廟",
+    "note": "未定位于现代地名（四庫本黄牛廟，黃牛峽）。"
+  },
+  {
+    "id": "pl-扇子峽",
+    "name": "扇子峽",
+    "name_variants": [
+      "扇子峽"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "峽",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-蝦蟆碚",
+    "name": "蝦蟆碚",
+    "name_variants": [
+      "蝦蟆碚"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-城下",
+    "name": "城下",
+    "name_variants": [
+      "城下"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-白沙市",
+    "name": "白沙市",
+    "name_variants": [
+      "白沙市"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-馬肝峽",
+    "name": "馬肝峽",
+    "name_variants": [
+      "馬肝峽"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "峽",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-達洞灘",
+    "name": "達洞灘",
+    "name_variants": [
+      "達洞灘"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-新灘",
+    "name": "新灘",
+    "name_variants": [
+      "新灘"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-新安驛",
+    "name": "新安驛",
+    "name_variants": [
+      "新安驛"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "驛",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-江瀆北廟",
+    "name": "江瀆北廟",
+    "name_variants": [
+      "江瀆北廟"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "廟",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-江瀆南廟",
+    "name": "江瀆南廟",
+    "name_variants": [
+      "江瀆南廟"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "廟",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-興山口",
+    "name": "興山口",
+    "name_variants": [
+      "興山口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-白狗峽",
+    "name": "白狗峽",
+    "name_variants": [
+      "白狗峽"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "峽",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-玉虛洞",
+    "name": "玉虛洞",
+    "name_variants": [
+      "玉虛洞"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "洞",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-昭君村",
+    "name": "昭君村",
+    "name_variants": [
+      "昭君村"
+    ],
+    "modern_name": "兴山",
+    "lat": 31.34,
+    "lon": 111.7,
+    "place_type": "村",
+    "note": "王昭君故里（興山）。"
+  },
+  {
+    "id": "pl-歸州",
+    "name": "歸州",
+    "name_variants": [
+      "歸州"
+    ],
+    "modern_name": "秭归",
+    "lat": 30.82,
+    "lon": 110.84,
+    "place_type": "州",
+    "note": "歸州（今秭歸），峽路州郡。"
+  },
+  {
+    "id": "pl-望洋堂",
+    "name": "望洋堂",
+    "name_variants": [
+      "望洋堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "堂",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-玩芳亭",
+    "name": "玩芳亭",
+    "name_variants": [
+      "玩芳亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-歸鄉堂",
+    "name": "歸鄉堂",
+    "name_variants": [
+      "歸鄉堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "堂",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-業灘",
+    "name": "業灘",
+    "name_variants": [
+      "業灘"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-巴東縣",
+    "name": "巴東縣",
+    "name_variants": [
+      "巴東縣"
+    ],
+    "modern_name": "巴东",
+    "lat": 31.03,
+    "lon": 110.32,
+    "place_type": "縣",
+    "note": "巴東縣（今巴東縣）。"
+  },
+  {
+    "id": "pl-石門關",
+    "name": "石門關",
+    "name_variants": [
+      "石門關"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "關",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-寇萊公祠堂",
+    "name": "寇萊公祠堂",
+    "name_variants": [
+      "寇萊公祠堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "祠",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-秋風亭",
+    "name": "秋風亭",
+    "name_variants": [
+      "秋風亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-雙柏堂",
+    "name": "雙柏堂",
+    "name_variants": [
+      "雙柏堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "堂",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-疲石",
+    "name": "疲石",
+    "name_variants": [
+      "疲石"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-三分泉",
+    "name": "三分泉",
+    "name_variants": [
+      "三分泉"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-清水洞",
+    "name": "清水洞",
+    "name_variants": [
+      "清水洞"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "洞",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-巫山",
+    "name": "巫山",
+    "name_variants": [
+      "巫山",
+      "巫山縣"
+    ],
+    "modern_name": "巫山",
+    "lat": 30.69,
+    "lon": 109.85,
+    "place_type": "山",
+    "note": "巫山（今巫山縣），巫峽。"
+  },
+  {
+    "id": "pl-妙用真人祠",
+    "name": "妙用真人祠",
+    "name_variants": [
+      "妙用真人祠"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "祠",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-瞿唐峽",
+    "name": "瞿唐峽",
+    "name_variants": [
+      "瞿唐峽"
+    ],
+    "modern_name": "奉节",
+    "lat": 31.05,
+    "lon": 109.5,
+    "place_type": "峽",
+    "note": "瞿唐峽（三峽首峽，今巫山瞿塘峽）。"
+  },
+  {
+    "id": "pl-聖姥泉",
+    "name": "聖姥泉",
+    "name_variants": [
+      "聖姥泉"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-瞿唐關",
+    "name": "瞿唐關",
+    "name_variants": [
+      "瞿唐關"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "關",
+    "note": "未定位于现代地名（四庫本瞿唐關）。"
+  },
+  {
+    "id": "pl-白帝廟",
+    "name": "白帝廟",
+    "name_variants": [
+      "白帝廟",
+      "白帝城"
+    ],
+    "modern_name": "奉节",
+    "lat": 31.05,
+    "lon": 109.5,
+    "place_type": "廟",
+    "note": "白帝城（今奉節白帝城，三峽）。"
+  },
+  {
+    "id": "pl-郫縣",
+    "name": "郫縣",
+    "name_variants": [
+      "郫縣"
+    ],
+    "modern_name": "成都",
+    "lat": 30.8,
+    "lon": 103.8,
+    "place_type": "縣",
+    "note": "郫縣（今成都市郫都區）。"
+  },
+  {
+    "id": "pl-永康軍",
+    "name": "永康軍",
+    "name_variants": [
+      "永康軍"
+    ],
+    "modern_name": "成都",
+    "lat": 30.67,
+    "lon": 103.8,
+    "place_type": "軍",
+    "note": "永康軍（今都江堰市）。"
+  },
+  {
+    "id": "pl-安德鎮",
+    "name": "安德鎮",
+    "name_variants": [
+      "安德鎮"
+    ],
+    "modern_name": "成都",
+    "lat": 30.67,
+    "lon": 103.8,
+    "place_type": "鎮",
+    "note": "安德鎮（今都江堰市）。"
+  },
+  {
+    "id": "pl-丈人觀",
+    "name": "丈人觀",
+    "name_variants": [
+      "丈人觀"
+    ],
+    "modern_name": "成都",
+    "lat": 30.8,
+    "lon": 103.8,
+    "place_type": "觀",
+    "note": "丈人觀（青城山）。"
+  },
+  {
+    "id": "pl-青城山",
+    "name": "青城山",
+    "name_variants": [
+      "青城山"
+    ],
+    "modern_name": "成都",
+    "lat": 30.9,
+    "lon": 103.57,
+    "place_type": "山",
+    "note": "青城山（今都江堰市）。"
+  },
+  {
+    "id": "pl-浮雲亭",
+    "name": "浮雲亭",
+    "name_variants": [
+      "浮雲亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-懷古亭",
+    "name": "懷古亭",
+    "name_variants": [
+      "懷古亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-崇德廟",
+    "name": "崇德廟",
+    "name_variants": [
+      "崇德廟"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "廟",
+    "note": "未定位于现代地名（四庫本崇徳縣/崇德廟）。"
+  },
+  {
+    "id": "pl-玉壘關",
+    "name": "玉壘關",
+    "name_variants": [
+      "玉壘關"
+    ],
+    "modern_name": "都江堰",
+    "lat": 31.0,
+    "lon": 103.6,
+    "place_type": "關",
+    "note": "玉壘關（都江堰）。"
+  },
+  {
+    "id": "pl-羅漢院",
+    "name": "羅漢院",
+    "name_variants": [
+      "羅漢院"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-上清宮",
+    "name": "上清宮",
+    "name_variants": [
+      "上清宮"
+    ],
+    "modern_name": "都江堰",
+    "lat": 31.0,
+    "lon": 103.6,
+    "place_type": "觀",
+    "note": "青城山上清宮。"
+  },
+  {
+    "id": "pl-範氏莊園",
+    "name": "範氏莊園",
+    "name_variants": [
+      "範氏莊園"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "園",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-長生觀",
+    "name": "長生觀",
+    "name_variants": [
+      "長生觀"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "觀",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-蜀州",
+    "name": "蜀州",
+    "name_variants": [
+      "蜀州"
+    ],
+    "modern_name": "崇州",
+    "lat": 30.63,
+    "lon": 103.66,
+    "place_type": "州",
+    "note": "蜀州（今崇州市）。"
+  },
+  {
+    "id": "pl-周家莊",
+    "name": "周家莊",
+    "name_variants": [
+      "周家莊"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-新津縣",
+    "name": "新津縣",
+    "name_variants": [
+      "新津縣"
+    ],
+    "modern_name": "成都",
+    "lat": 30.42,
+    "lon": 103.8,
+    "place_type": "縣",
+    "note": "新津縣（今成都新津區）。"
+  },
+  {
+    "id": "pl-江原縣",
+    "name": "江原縣",
+    "name_variants": [
+      "江原縣"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "縣",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-眉州城外江",
+    "name": "眉州城外江",
+    "name_variants": [
+      "眉州城外江"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-眉州",
+    "name": "眉州",
+    "name_variants": [
+      "眉州"
+    ],
+    "modern_name": "眉山",
+    "lat": 30.08,
+    "lon": 103.85,
+    "place_type": "州",
+    "note": "眉州（今眉山市）。"
+  },
+  {
+    "id": "pl-脩覺",
+    "name": "脩覺",
+    "name_variants": [
+      "脩覺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-中巖",
+    "name": "中巖",
+    "name_variants": [
+      "中巖"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-慈姥巖",
+    "name": "慈姥巖",
+    "name_variants": [
+      "慈姥巖"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-嘉州",
+    "name": "嘉州",
+    "name_variants": [
+      "嘉州"
+    ],
+    "modern_name": "乐山",
+    "lat": 29.55,
+    "lon": 103.77,
+    "place_type": "州",
+    "note": "嘉州（今樂山市），萬景樓。"
+  },
+  {
+    "id": "pl-湖瀼峽",
+    "name": "湖瀼峽",
+    "name_variants": [
+      "湖瀼峽"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "峽",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-淩雲",
+    "name": "淩雲",
+    "name_variants": [
+      "淩雲"
+    ],
+    "modern_name": "乐山",
+    "lat": 29.55,
+    "lon": 103.77,
+    "place_type": "山",
+    "note": "嘉州淩雲山。"
+  },
+  {
+    "id": "pl-淩雲寺",
+    "name": "淩雲寺",
+    "name_variants": [
+      "淩雲寺"
+    ],
+    "modern_name": "乐山",
+    "lat": 29.55,
+    "lon": 103.77,
+    "place_type": "寺",
+    "note": "嘉州淩雲寺。"
+  },
+  {
+    "id": "pl-雅州",
+    "name": "雅州",
+    "name_variants": [
+      "雅州"
+    ],
+    "modern_name": "雅安",
+    "lat": 30.0,
+    "lon": 103.0,
+    "place_type": "州",
+    "note": "雅州（今雅安市）。"
+  },
+  {
+    "id": "pl-廣福院",
+    "name": "廣福院",
+    "name_variants": [
+      "廣福院"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-萬景樓",
+    "name": "萬景樓",
+    "name_variants": [
+      "萬景樓"
+    ],
+    "modern_name": "乐山",
+    "lat": 29.55,
+    "lon": 103.77,
+    "place_type": "樓",
+    "note": "嘉州萬景樓。"
+  },
+  {
+    "id": "pl-蘇稽鎮",
+    "name": "蘇稽鎮",
+    "name_variants": [
+      "蘇稽鎮"
+    ],
+    "modern_name": "乐山",
+    "lat": 29.55,
+    "lon": 103.77,
+    "place_type": "鎮",
+    "note": "蘇稽鎮（今樂山蘇稽）。"
+  },
+  {
+    "id": "pl-峨眉",
+    "name": "峨眉",
+    "name_variants": [
+      "峨眉",
+      "峨眉縣"
+    ],
+    "modern_name": "峨眉",
+    "lat": 29.6,
+    "lon": 103.47,
+    "place_type": "山",
+    "note": "峨眉山（今峨眉山市）。"
+  },
+  {
+    "id": "pl-符文鎮",
+    "name": "符文鎮",
+    "name_variants": [
+      "符文鎮"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "鎮",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-慈福",
+    "name": "慈福",
+    "name_variants": [
+      "慈福"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-青竹橋",
+    "name": "青竹橋",
+    "name_variants": [
+      "青竹橋"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "橋",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-中峰院",
+    "name": "中峰院",
+    "name_variants": [
+      "中峰院"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-樟木",
+    "name": "樟木",
+    "name_variants": [
+      "樟木"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-雙溪橋",
+    "name": "雙溪橋",
+    "name_variants": [
+      "雙溪橋"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "橋",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-菩薩閣",
+    "name": "菩薩閣",
+    "name_variants": [
+      "菩薩閣"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "閣",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-白水普賢寺",
+    "name": "白水普賢寺",
+    "name_variants": [
+      "白水普賢寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-華嚴院",
+    "name": "華嚴院",
+    "name_variants": [
+      "華嚴院"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-白水寺",
+    "name": "白水寺",
+    "name_variants": [
+      "白水寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-光相寺",
+    "name": "光相寺",
+    "name_variants": [
+      "光相寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-茅亭觜",
+    "name": "茅亭觜",
+    "name_variants": [
+      "茅亭觜"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-峰門",
+    "name": "峰門",
+    "name_variants": [
+      "峰門"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-新店",
+    "name": "新店",
+    "name_variants": [
+      "新店"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-思佛亭",
+    "name": "思佛亭",
+    "name_variants": [
+      "思佛亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-光明巖",
+    "name": "光明巖",
+    "name_variants": [
+      "光明巖"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-點心山",
+    "name": "點心山",
+    "name_variants": [
+      "點心山"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-天仙橋",
+    "name": "天仙橋",
+    "name_variants": [
+      "天仙橋"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "橋",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-八十四盤",
+    "name": "八十四盤",
+    "name_variants": [
+      "八十四盤",
+      "一百八盤"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名（四庫本一百八盤/一百八盤）。"
+  },
+  {
+    "id": "pl-虎溪橋",
+    "name": "虎溪橋",
+    "name_variants": [
+      "虎溪橋"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "橋",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-虎溪",
+    "name": "虎溪",
+    "name_variants": [
+      "虎溪"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-黑水",
+    "name": "黑水",
+    "name_variants": [
+      "黑水"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-龍門",
+    "name": "龍門",
+    "name_variants": [
+      "龍門"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-牛心寺",
+    "name": "牛心寺",
+    "name_variants": [
+      "牛心寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-佛頭灘",
+    "name": "佛頭灘",
+    "name_variants": [
+      "佛頭灘"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-平羌",
+    "name": "平羌",
+    "name_variants": [
+      "平羌"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-犍為縣",
+    "name": "犍為縣",
+    "name_variants": [
+      "犍為縣"
+    ],
+    "modern_name": "乐山",
+    "lat": 29.55,
+    "lon": 103.77,
+    "place_type": "縣",
+    "note": "犍為縣（今樂山犍為區）。"
+  },
+  {
+    "id": "pl-下壩",
+    "name": "下壩",
+    "name_variants": [
+      "下壩"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-敘州",
+    "name": "敘州",
+    "name_variants": [
+      "敘州"
+    ],
+    "modern_name": "宜宾",
+    "lat": 28.75,
+    "lon": 104.6,
+    "place_type": "州",
+    "note": "敘州（今宜賓市），宣化縣。"
+  },
+  {
+    "id": "pl-宣化縣",
+    "name": "宣化縣",
+    "name_variants": [
+      "宣化縣"
+    ],
+    "modern_name": "宜宾",
+    "lat": 28.75,
+    "lon": 104.6,
+    "place_type": "縣",
+    "note": "宣化縣（今宜宾）。"
+  },
+  {
+    "id": "pl-南溪縣",
+    "name": "南溪縣",
+    "name_variants": [
+      "南溪縣"
+    ],
+    "modern_name": "宜宾",
+    "lat": 28.75,
+    "lon": 104.6,
+    "place_type": "縣",
+    "note": "南溪縣（今宜賓南溪區）。"
+  },
+  {
+    "id": "pl-瀘州",
+    "name": "瀘州",
+    "name_variants": [
+      "瀘州"
+    ],
+    "modern_name": "泸州",
+    "lat": 28.87,
+    "lon": 105.4,
+    "place_type": "州",
+    "note": "瀘州（今瀘州市），南定樓。"
+  },
+  {
+    "id": "pl-江安縣",
+    "name": "江安縣",
+    "name_variants": [
+      "江安縣"
+    ],
+    "modern_name": "泸州",
+    "lat": 28.87,
+    "lon": 105.4,
+    "place_type": "縣",
+    "note": "江安縣（今瀘州江安區）。"
+  },
+  {
+    "id": "pl-南定樓",
+    "name": "南定樓",
+    "name_variants": [
+      "南定樓"
+    ],
+    "modern_name": "泸州",
+    "lat": 28.87,
+    "lon": 105.4,
+    "place_type": "樓",
+    "note": "瀘州南定樓。"
+  },
+  {
+    "id": "pl-合江縣",
+    "name": "合江縣",
+    "name_variants": [
+      "合江縣"
+    ],
+    "modern_name": "泸州",
+    "lat": 28.87,
+    "lon": 105.4,
+    "place_type": "縣",
+    "note": "合江縣（今瀘州合江縣）。"
+  },
+  {
+    "id": "pl-泥培村",
+    "name": "泥培村",
+    "name_variants": [
+      "泥培村"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-恭州",
+    "name": "恭州",
+    "name_variants": [
+      "恭州"
+    ],
+    "modern_name": "重庆",
+    "lat": 29.56,
+    "lon": 106.55,
+    "place_type": "州",
+    "note": "恭州（今重慶市）。"
+  },
+  {
+    "id": "pl-江津縣",
+    "name": "江津縣",
+    "name_variants": [
+      "江津縣"
+    ],
+    "modern_name": "重庆",
+    "lat": 29.56,
+    "lon": 106.55,
+    "place_type": "縣",
+    "note": "江津縣（今重慶江津區）。"
+  },
+  {
+    "id": "pl-漁洞",
+    "name": "漁洞",
+    "name_variants": [
+      "漁洞"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-秭歸",
+    "name": "秭歸",
+    "name_variants": [
+      "秭歸"
+    ],
+    "modern_name": "秭归",
+    "lat": 30.82,
+    "lon": 110.84,
+    "place_type": "水",
+    "note": "秭歸（今秭歸縣）。"
+  },
+  {
+    "id": "pl-報恩寺",
+    "name": "報恩寺",
+    "name_variants": [
+      "報恩寺"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "寺",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-涪州",
+    "name": "涪州",
+    "name_variants": [
+      "涪州"
+    ],
+    "modern_name": "涪陵",
+    "lat": 29.7,
+    "lon": 107.4,
+    "place_type": "州",
+    "note": "涪州（今涪陵區）。"
+  },
+  {
+    "id": "pl-樂溫縣",
+    "name": "樂溫縣",
+    "name_variants": [
+      "樂溫縣"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "縣",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-排亭",
+    "name": "排亭",
+    "name_variants": [
+      "排亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-黔江",
+    "name": "黔江",
+    "name_variants": [
+      "黔江"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-群豬灘",
+    "name": "群豬灘",
+    "name_variants": [
+      "群豬灘"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-忠州",
+    "name": "忠州",
+    "name_variants": [
+      "忠州"
+    ],
+    "modern_name": "忠县",
+    "lat": 30.34,
+    "lon": 109.68,
+    "place_type": "州",
+    "note": "忠州（今忠縣），荔枝樓。"
+  },
+  {
+    "id": "pl-酆都縣",
+    "name": "酆都縣",
+    "name_variants": [
+      "酆都縣"
+    ],
+    "modern_name": "丰都",
+    "lat": 29.9,
+    "lon": 107.73,
+    "place_type": "縣",
+    "note": "酆都縣（今豐都縣）。"
+  },
+  {
+    "id": "pl-竹平",
+    "name": "竹平",
+    "name_variants": [
+      "竹平"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-萬州",
+    "name": "萬州",
+    "name_variants": [
+      "萬州"
+    ],
+    "modern_name": "万州",
+    "lat": 30.79,
+    "lon": 108.37,
+    "place_type": "州",
+    "note": "萬州（今萬州區），四賢閣。"
+  },
+  {
+    "id": "pl-武寧縣",
+    "name": "武寧縣",
+    "name_variants": [
+      "武寧縣"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "縣",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-開江口",
+    "name": "開江口",
+    "name_variants": [
+      "開江口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-下巖",
+    "name": "下巖",
+    "name_variants": [
+      "下巖"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-雲安軍",
+    "name": "雲安軍",
+    "name_variants": [
+      "雲安軍"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "軍",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-西山",
+    "name": "西山",
+    "name_variants": [
+      "西山"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "同形異地：建康西山/忠州西山，按卷區分。"
+  },
+  {
+    "id": "pl-三峽堂",
+    "name": "三峽堂",
+    "name_variants": [
+      "三峽堂"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "堂",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-高齋",
+    "name": "高齋",
+    "name_variants": [
+      "高齋"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "齋",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-瞿唐口",
+    "name": "瞿唐口",
+    "name_variants": [
+      "瞿唐口"
+    ],
+    "modern_name": "奉节",
+    "lat": 31.05,
+    "lon": 109.5,
+    "place_type": "口",
+    "note": "瞿唐峽口。"
+  },
+  {
+    "id": "pl-瞿唐",
+    "name": "瞿唐",
+    "name_variants": [
+      "瞿唐"
+    ],
+    "modern_name": "奉节",
+    "lat": 31.05,
+    "lon": 109.5,
+    "place_type": "峽",
+    "note": "瞿唐（瞿唐峽）。"
+  },
+  {
+    "id": "pl-大溪口",
+    "name": "大溪口",
+    "name_variants": [
+      "大溪口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名（四庫本大溪口）。"
+  },
+  {
+    "id": "pl-巫峽",
+    "name": "巫峽",
+    "name_variants": [
+      "巫峽"
+    ],
+    "modern_name": "巫山",
+    "lat": 30.69,
+    "lon": 109.85,
+    "place_type": "峽",
+    "note": "巫峽（三峽）。"
+  },
+  {
+    "id": "pl-神女廟",
+    "name": "神女廟",
+    "name_variants": [
+      "神女廟"
+    ],
+    "modern_name": "巫山",
+    "lat": 30.69,
+    "lon": 109.85,
+    "place_type": "廟",
+    "note": "巫峽神女廟。"
+  },
+  {
+    "id": "pl-東奔灘",
+    "name": "東奔灘",
+    "name_variants": [
+      "東奔灘"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-望洋軒",
+    "name": "望洋軒",
+    "name_variants": [
+      "望洋軒"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "軒",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-歸鄉沱",
+    "name": "歸鄉沱",
+    "name_variants": [
+      "歸鄉沱"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-黃牛峽",
+    "name": "黃牛峽",
+    "name_variants": [
+      "黃牛峽"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "峽",
+    "note": "未定位于现代地名（四庫本黃牛廟）。"
+  },
+  {
+    "id": "pl-平善壩",
+    "name": "平善壩",
+    "name_variants": [
+      "平善壩"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-松滋縣",
+    "name": "松滋縣",
+    "name_variants": [
+      "松滋縣"
+    ],
+    "modern_name": "松滋",
+    "lat": 29.97,
+    "lon": 112.03,
+    "place_type": "縣",
+    "note": "松滋縣（今松滋市）。"
+  },
+  {
+    "id": "pl-沙頭",
+    "name": "沙頭",
+    "name_variants": [
+      "沙頭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-渚官",
+    "name": "渚官",
+    "name_variants": [
+      "渚官"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-江瀆廟",
+    "name": "江瀆廟",
+    "name_variants": [
+      "江瀆廟"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "廟",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-公安縣",
+    "name": "公安縣",
+    "name_variants": [
+      "公安縣"
+    ],
+    "modern_name": "公安",
+    "lat": 29.97,
+    "lon": 112.33,
+    "place_type": "縣",
+    "note": "公安縣。"
+  },
+  {
+    "id": "pl-魯家洑",
+    "name": "魯家洑",
+    "name_variants": [
+      "魯家洑"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-鄂渚",
+    "name": "鄂渚",
+    "name_variants": [
+      "鄂渚",
+      "鄂州"
+    ],
+    "modern_name": "鄂州",
+    "lat": 30.23,
+    "lon": 114.89,
+    "place_type": "州",
+    "note": "鄂渚（鄂州）。"
+  },
+  {
+    "id": "pl-沌",
+    "name": "沌",
+    "name_variants": [
+      "沌"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-南布堤",
+    "name": "南布堤",
+    "name_variants": [
+      "南布堤"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-壓雲亭",
+    "name": "壓雲亭",
+    "name_variants": [
+      "壓雲亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-漢口",
+    "name": "漢口",
+    "name_variants": [
+      "漢口"
+    ],
+    "modern_name": "武汉",
+    "lat": 30.58,
+    "lon": 114.31,
+    "place_type": "水",
+    "note": "漢口（今武漢漢口）。"
+  },
+  {
+    "id": "pl-赤壁",
+    "name": "赤壁",
+    "name_variants": [
+      "赤壁"
+    ],
+    "modern_name": "赤壁",
+    "lat": 29.87,
+    "lon": 113.8,
+    "place_type": "山",
+    "note": "赤壁（今赤壁市），蘇軾赤壁賦之地。"
+  },
+  {
+    "id": "pl-桐木溝",
+    "name": "桐木溝",
+    "name_variants": [
+      "桐木溝"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-馬頭",
+    "name": "馬頭",
+    "name_variants": [
+      "馬頭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-東林",
+    "name": "東林",
+    "name_variants": [
+      "東林"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "處",
+    "note": "九江南林山東林（同形異稱歸一）。"
+  },
+  {
+    "id": "pl-濂溪",
+    "name": "濂溪",
+    "name_variants": [
+      "濂溪"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-東林寺",
+    "name": "東林寺",
+    "name_variants": [
+      "東林寺"
+    ],
+    "modern_name": "九江",
+    "lat": 29.7,
+    "lon": 116.0,
+    "place_type": "寺",
+    "note": "九江東林寺（廬山）。"
+  },
+  {
+    "id": "pl-清虛庵",
+    "name": "清虛庵",
+    "name_variants": [
+      "清虛庵"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "庵",
+    "note": "未定位于现代地名（四庫本清虛菴）。"
+  },
+  {
+    "id": "pl-湖口",
+    "name": "湖口",
+    "name_variants": [
+      "湖口"
+    ],
+    "modern_name": "九江",
+    "lat": 29.7,
+    "lon": 116.0,
+    "place_type": "水",
+    "note": "湖口（鄱陽湖口，今湖口縣）。"
+  },
+  {
+    "id": "pl-交石夾",
+    "name": "交石夾",
+    "name_variants": [
+      "交石夾"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-大孤",
+    "name": "大孤",
+    "name_variants": [
+      "大孤"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-滶背洲",
+    "name": "滶背洲",
+    "name_variants": [
+      "滶背洲"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "洲",
+    "note": "未定位于现代地名（四庫本滶背洲）。"
+  },
+  {
+    "id": "pl-波斯夾",
+    "name": "波斯夾",
+    "name_variants": [
+      "波斯夾"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-望淮亭",
+    "name": "望淮亭",
+    "name_variants": [
+      "望淮亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-池口",
+    "name": "池口",
+    "name_variants": [
+      "池口"
+    ],
+    "modern_name": "池州",
+    "lat": 30.66,
+    "lon": 117.49,
+    "place_type": "水",
+    "note": "池州池口。"
+  },
+  {
+    "id": "pl-非水亭",
+    "name": "非水亭",
+    "name_variants": [
+      "非水亭"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "亭",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-齊山",
+    "name": "齊山",
+    "name_variants": [
+      "齊山"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "山",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-九華樓",
+    "name": "九華樓",
+    "name_variants": [
+      "九華樓"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "樓",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-南湖口",
+    "name": "南湖口",
+    "name_variants": [
+      "南湖口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-清溪口",
+    "name": "清溪口",
+    "name_variants": [
+      "清溪口"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-清溪",
+    "name": "清溪",
+    "name_variants": [
+      "清溪"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "水",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-淩歊臺",
+    "name": "淩歊臺",
+    "name_variants": [
+      "淩歊臺",
+      "淩歊臺"
+    ],
+    "modern_name": "当涂",
+    "lat": 31.49,
+    "lon": 118.28,
+    "place_type": "臺",
+    "note": "當涂淩歊臺（四庫本淩歊臺/凌歊臺）。"
+  },
+  {
+    "id": "pl-建康府",
+    "name": "建康府",
+    "name_variants": [
+      "建康府",
+      "建康",
+      "金陵",
+      "江宁",
+      "金川"
+    ],
+    "modern_name": "南京",
+    "lat": 32.06,
+    "lon": 118.8,
+    "place_type": "州",
+    "note": "建康（今南京），同形異稱歸一。"
+  },
+  {
+    "id": "pl-伏龜樓",
+    "name": "伏龜樓",
+    "name_variants": [
+      "伏龜樓"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "樓",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-清溪閣",
+    "name": "清溪閣",
+    "name_variants": [
+      "清溪閣"
+    ],
+    "modern_name": null,
+    "lat": null,
+    "lon": null,
+    "place_type": "閣",
+    "note": "未定位于现代地名。"
+  },
+  {
+    "id": "pl-鎮江府",
+    "name": "鎮江府",
+    "name_variants": [
+      "鎮江府",
+      "鎮江"
+    ],
+    "modern_name": "镇江",
+    "lat": 32.19,
+    "lon": 119.45,
+    "place_type": "州",
+    "note": "鎮江（京口），同形異稱歸一。"
+  },
+  {
+    "id": "pl-滸墅",
+    "name": "滸墅",
+    "name_variants": [
+      "滸墅"
+    ],
+    "modern_name": "苏州",
+    "lat": 31.3,
+    "lon": 120.6,
+    "place_type": "水",
+    "note": "滸墅（今蘇州太湖邊）。"
+  },
+  {
+    "id": "pl-成都",
+    "name": "成都",
+    "name_variants": [
+      "成都",
+      "小東郭合江亭",
+      "合江亭",
+      "離堆",
+      "都江"
+    ],
+    "modern_name": "成都",
+    "lat": 30.66,
+    "lon": 104.06,
+    "place_type": "城",
+    "note": "成都（吳船錄卷首離成都，合江亭/都江癏）。"
+  },
+  {
+    "id": "pl-山陰",
+    "name": "山陰",
+    "name_variants": [
+      "山陰"
+    ],
+    "modern_name": "绍兴",
+    "lat": 30.0,
+    "lon": 120.58,
+    "place_type": "城",
+    "note": "山陰（今紹興），張岱故里。"
+  },
+  {
+    "id": "pl-黃溪",
+    "name": "黃溪",
+    "name_variants": [
+      "黃溪",
+      "pl-huang-xi"
+    ],
+    "modern_name": "永州",
+    "lat": 26.42,
+    "lon": 111.61,
+    "place_type": "水",
+    "note": "永州黃溪（游黃溪記），柳宗元永州司馬任上。works 占位 pl-huang-xi。"
+  },
+  {
+    "id": "pl-xi-shan",
+    "name": "pl-xi-shan",
+    "name_variants": [
+      "西山"
+    ],
+    "modern_name": "永州",
+    "lat": 26.42,
+    "lon": 111.61,
+    "place_type": "山",
+    "note": "永州西郊山（始得西山宴遊記），柳宗元居寓處。同形異地：建康西山/忠州西山，按卷區分。works 占位 pl-xi-shan。"
+  },
+  {
+    "id": "pl-鈷鉧潭",
+    "name": "鈷鉧潭",
+    "name_variants": [
+      "鈷鉧潭",
+      "pl-gu-gu-tan"
+    ],
+    "modern_name": "永州",
+    "lat": 26.42,
+    "lon": 111.61,
+    "place_type": "水",
+    "note": "永州鈷鉧潭（鈷鉧潭記）。works 占位 pl-gu-gu-tan。"
+  },
+  {
+    "id": "pl-小石潭",
+    "name": "小石潭",
+    "name_variants": [
+      "小石潭",
+      "pl-xiao-shi-tan"
+    ],
+    "modern_name": "永州",
+    "lat": 26.42,
+    "lon": 111.61,
+    "place_type": "水",
+    "note": "永州小石潭（至小丘西小石潭記）。works 占位 pl-xiao-shi-tan。"
+  },
+  {
+    "id": "pl-袁家渴",
+    "name": "袁家渴",
+    "name_variants": [
+      "袁家渴",
+      "pl-yuan-jia-ke"
+    ],
+    "modern_name": "永州",
+    "lat": 26.42,
+    "lon": 111.61,
+    "place_type": "水",
+    "note": "永州袁家渴（袁家渴記）。works 占位 pl-yuan-jia-ke。"
+  },
+  {
+    "id": "pl-石渠",
+    "name": "石渠",
+    "name_variants": [
+      "石渠",
+      "pl-shi-qu"
+    ],
+    "modern_name": "永州",
+    "lat": 26.42,
+    "lon": 111.61,
+    "place_type": "水",
+    "note": "永州石渠（石渠記）。works 占位 pl-shi-qu。"
+  },
+  {
+    "id": "pl-石澗",
+    "name": "石澗",
+    "name_variants": [
+      "石澗",
+      "pl-shi-jian"
+    ],
+    "modern_name": "永州",
+    "lat": 26.42,
+    "lon": 111.61,
+    "place_type": "水",
+    "note": "永州石澗（石澗記）。works 占位 pl-shi-jian。"
+  },
+  {
+    "id": "pl-小石城山",
+    "name": "小石城山",
+    "name_variants": [
+      "小石城山",
+      "pl-xiao-shi-cheng-shan"
+    ],
+    "modern_name": "永州",
+    "lat": 26.42,
+    "lon": 111.61,
+    "place_type": "山",
+    "note": "永州小石城山（小石城山記）。works 占位 pl-xiao-shi-cheng-shan。"
+  },
+  {
+    "id": "pl-石鐘山",
+    "name": "石鐘山",
+    "name_variants": [
+      "石鐘山",
+      "pl-石鐘山"
+    ],
+    "modern_name": "湖口",
+    "lat": 29.7,
+    "lon": 116.0,
+    "place_type": "山",
+    "note": "鄱陽湖口石鐘山（石鐘山記），蘇軾元豐七年（1084）遷汝途中。works 占位 pl-石鐘山。"
+  }
+]

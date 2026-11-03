@@ -11,3 +11,6 @@ proto/index.html
 # 系统文件
 .DS_Store
 Thumbs.db
+
+# 内部交接与工作底稿（不含于公开仓库）
+HANDOFF_*.md

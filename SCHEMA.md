@@ -20,8 +20,8 @@ timeline 编年 ←── works 与 events 的时间锚点
 ```
 
 **核心关系三条**：
-1. **书（book）与篇（pian）是 works 表的两种记录**，用 `type` 字段区分。
-2. **事件（events）是叶子**，通过 `source_type` + `source_id` 挂到书或篇下。
+1. **书与篇都是 works 表的记录，不做扁平分类**——靠 `parent_id` 表达层级（书=`parent_id` 为空；篇=`parent_id` 指向所属书）。**文体差异由 `genre` 承担**（日记体书 / 记游散文 / 赋 / 诗 / 小品）。
+2. **事件（events）是叶子**，通过 `source_id` 挂到书或篇下（`source_id` 指向 works.id）。
 3. **互文（intertexts）是跨表连接**，一头是「谁在哪个文本里」，一头是「提到了谁/引了什么」，**每条必附引文**。
 
 ---
@@ -103,10 +103,9 @@ timeline 编年 ←── works 与 events 的时间锚点
 | 字段 | 类型 | 说明 | 等级 |
 |---|---|---|---|
 | id | str | 主键，如 `w-ru-shu-ji` / `w-chi-bi-fu` | 核心 |
-| type | enum | book（书） / pian（篇） | 核心 |
 | title | str | 书名或篇名（繁体） | 核心 |
 | author_id | str | 挂 persons | 核心 |
-| parent_id | str | 若为篇，挂所属书（可空） | 核心 |
+| parent_id | str | 若为篇，挂所属书；书则留空 | 核心 |
 | genre | enum | 日记体书 / 记游散文 / 赋 / 诗 / 小品 | 核心 |
 | visit_year / visit_month / visit_day | int | **游览时间**（精确到月日，考不到回退） | 核心 |
 | write_year / write_month / write_day | int | **成文时间**（与游时分离；行时记两值相等） | 核心 |
@@ -132,8 +131,7 @@ timeline 编年 ←── works 与 events 的时间锚点
 | 字段 | 类型 | 说明 | 等级 |
 |---|---|---|---|
 | id | str | 主键，如 `e-ru-001` | 核心 |
-| source_type | enum | book / pian | 核心 |
-| source_id | str | 挂 works | 核心 |
+| source_id | str | 挂 works（书或篇） | 核心 |
 | person_id | str | 挂 persons（作者） | 核心 |
 | year / month / day | int | 事件时间 | 核心 |
 | date_orig | str | 原文纪日 | 可选 |
@@ -156,7 +154,7 @@ timeline 编年 ←── works 与 events 的时间锚点
 | 字段 | 类型 | 说明 | 等级 |
 |---|---|---|---|
 | id | str | 主键 | 核心 |
-| source_type | enum | work / event（在篇里还是事件里） | 核心 |
+| source_table | enum | works / events（source_id 指向哪张表） | 核心 |
 | source_id | str | 挂 works 或 events | 核心 |
 | target_person_id | str | 被提及的前贤（挂 persons） | 核心 |
 | relation | enum | 追慕 / 质疑 / 考订 / 唱和 / 纪其遗迹 | 核心 |
@@ -172,10 +170,10 @@ timeline 编年 ←── works 与 events 的时间锚点
 
 ```
 persons:  p-lu-you（陆游,作者）  p-su-shi（苏轼,前贤）
-works:    w-ru-shu-ji（入蜀记, book, 陆游, 1170）
-events:   e-ru-083（source=w-ru-shu-ji, 八月十九日, place=pl-huang-zhou,
-                     activity=[游观,考订], orig=「十九日早游东坡…坡西竹林…」）
-intertexts:  source=event e-ru-083, target=p-su-shi, relation=追慕,
+works:    w-ru-shu-ji（入蜀记, genre=日记体书, parent=null, 陆游, visit=write=1170）
+events:   e-ru-083（source_id=w-ru-shu-ji, 八月十九日, place=pl-huang-zhou,
+                   activity=[游观,考订], orig=「十九日早游东坡…坡西竹林…」）
+intertexts:  source_table=events, source_id=e-ru-083, target=p-su-shi, relation=追慕,
              quote=「坡西竹林，古氏故物，号南坡，今已残伐无几」, quote_source=四库本卷三
 ```
 

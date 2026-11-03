@@ -27,9 +27,9 @@
 
 **注释只用于查证，不参与事件匹配**——注释里的地名是解释典故用的（如「法云寺：在山阴县西北八里」），不是当日到访地，混进匹配会把解释性地点误算成事件地点。详见 `classical-text-to-structured-data` 技能铁律一。
 
-### 3. 事件表（`data/events/`，不在 source/ 下，因为这是结构化派生数据，不是原始文本）
+### 3. 事件表（现役版在 `data/events_v2/`；早期版本存 `data/archive/`）
 - `入蜀记_events.json/csv`：145 条（v002 版本，纯原文动词锚定）
-- `吴船录_events.json/csv`：另见 `data/archive/v003_吴船录_纯原文匹配/`
+- `吴船录_events.json/csv`：早期版另见 `data/archive/v003_吴船录_纯原文匹配/`
 
 事件表方法与已知问题，见 `data/archive/v002_纯原文匹配/METHOD.md`、`v003_吴船录_纯原文匹配/METHOD.md`（完整保留，包括未解决项，不删旧版本）。
 

@@ -9,19 +9,16 @@
 
 ```
 data/
-├── archive/
+├── events_v2/                  ← 现役事件表（入蜀記156 / 吳船錄110 + gen/accept脚本 + METHOD）
+├── works_v1/                   ← 现役篇目表（17篇 + METHOD）
+├── base/                       ← 基础表 persons/places/sources/timeline + 生成脚本 + METHOD
+├── playlist_时间交集/          ← 两书同时段对照清单（研究成果）
+├── archive/                    ← 历史版本 v001~v004（旧版不删，各含 METHOD）
 │   ├── v001_译注原文混排_动词锚定/
-│   │   ├── METHOD.md          ← 方法说明（必填）
-│   │   ├── data/              ← 数据文件
-│   │   │   ├── events.json
-│   │   │   └── events.csv
-│   │   └── CHANGELOG.md       ← 相对上一版改了什么（v001 可省）
 │   ├── v002_纯原文匹配/
-│   │   ├── METHOD.md
-│   │   ├── data/
-│   │   └── CHANGELOG.md
-│   └── ...
-└── current/                    ← 指向当前采用的版本（软链或复制）
+│   ├── v003_吴船录_纯原文匹配/
+│   └── v004_入蜀记_词典补全/
+└── README.md                   ← 本文件
 ```
 
 **命名规则**：`v{三位序号}_{方法简称}`，序号只增不减。
@@ -61,3 +58,20 @@ data/
 ---
 
 *本规范由 jiya 整理，2026-10-27*
+
+---
+
+## 现役数据速查（2026-11-03 整理）
+
+| 表 | 位置 | 条数 | 说明 |
+|---|---|---|---|
+| 事件表·入蜀记 | `events_v2/入蜀記_events.json/csv` | 156 | 标点本切分，含 weather/emotion/imagery/landscape |
+| 事件表·吴船录 | `events_v2/吳船錄_events.json/csv` | 110 | 干支推日，含同上四维字段 |
+| 篇目表 | `works_v1/works.json/csv` | 17 | 柳9+苏4+张2+书级2 |
+| 人物表 | `base/persons.json/csv` | 32 | 5作者+交游；存疑已核（蔡文姬/陈亮删，何正仲立） |
+| 地名表 | `base/places.json/csv` | 379 | 只收原文地名；坐标142有/237 null |
+| 文献源表 | `base/sources.json/csv` | 6 | 按作者归并 |
+| 编年表 | `base/timeline.json/csv` | — | 篇目+生平锚点（见 base/METHOD） |
+
+外键已全部回填，悬空=0（base/backfill.py 可复验）。
+`data/events/`（旧中间版）已于 2026-11-03 删除，其内容与 archive v003/v004 逐字重复，原件在 archive。

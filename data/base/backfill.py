@@ -28,6 +28,16 @@ for p in places:
         v2pid.setdefault(v, p['id'])
     v2pid.setdefault(p['name'], p['id'])
 
+# v2.2 合并执行修正：被删的同地异名重复条目 → 主条目（旧引用重定向，防悬空）
+DROP_REDIRECT = {
+    'pl-建康府': 'pl-建康',
+    'pl-鎮江府': 'pl-鎮江',
+    'pl-鄂渚': 'pl-鄂州',
+}
+# 把被删 id 也写进 v2pid 指向主条目（仅重定向，不复活记录）
+for _old, _new in DROP_REDIRECT.items():
+    v2pid.setdefault(_old, _new)
+
 pid_set = set(p['id'] for p in persons)
 pl_set = set(p['id'] for p in places)
 sid_set = set(s['id'] for s in sources)

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>南宋·江行 — 入蜀記 / 吳船錄 時空雙視圖</title>
+<style>
+/* 内嵌子集字体（SimHei 子集，WOFF2 base64）——脱离本机字体也能显示原文的繁体/异体字 */
+@font-face{font-family:"YZHei";src:url(data:font/woff2;base64,__FONT__) format("woff2");font-display:block;}
+:root{
+  --bg:#0e1113; --panel:#14181b; --line:#262d32; --line2:#1d2327;
+  --text:#d6dad6; --dim:#8a938d; --dim2:#5c6560;
+  --lu:#e0a34a; --fan:#5aa9c9; --hl:#ece9dd;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--text);
+  font-family:"YZHei","Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;
+  font-size:13px;overflow:hidden;-webkit-font-smoothing:antialiased}
+#app{display:grid;grid-template-rows:auto minmax(0,1fr);height:100%}
+header{display:flex;align-items:baseline;gap:20px;padding:9px 16px;border-bottom:1px solid var(--line);background:var(--panel)}
+header h1{font-size:15px;margin:0;font-weight:400;letter-spacing:.16em;color:var(--hl)}
+header .sub{font-size:11px;color:var(--dim2);letter-spacing:.05em}
+#filters{display:flex;gap:6px;margin-left:auto;align-items:center}
+#filters button{font:inherit;font-size:12px;color:var(--dim);background:transparent;border:1px solid var(--line);
+  padding:4px 11px;border-radius:2px;cursor:pointer;letter-spacing:.06em}
+#filters button:hover{color:var(--text);border-color:var(--dim2)}
+#filters button.on{color:#0e1113;background:var(--text);border-color:var(--text)}
+#count{font-size:11px;color:var(--dim2);min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+
+main{display:grid;grid-template-columns:minmax(0,1fr) 404px;min-height:0}
+#left{display:grid;grid-template-rows:minmax(0,1.5fr) minmax(210px,1fr);min-height:0;min-width:0}
+section{position:relative;min-height:0;overflow:hidden}
+#mapwrap{border-bottom:1px solid var(--line)}
+.vtitle{position:absolute;left:14px;top:9px;font-size:10.5px;color:var(--dim2);letter-spacing:.2em;z-index:2;pointer-events:none}
+svg{display:block}
+svg .lbl{font-size:10px;fill:#98a19b;letter-spacing:.03em;pointer-events:none}
+svg .ax{font-size:10px;fill:#6e7772;letter-spacing:.06em}
+svg .grid{stroke:#20272b;stroke-width:1}
+svg .grid.x{stroke:#171c1f}
+
+#legend{position:absolute;right:12px;top:7px;z-index:3;display:flex;gap:20px;font-size:10.5px;color:var(--dim);
+  background:rgba(14,17,19,.82);padding:7px 10px;border:1px solid var(--line2)}
+#legend .grp{display:flex;flex-direction:column;gap:4px}
+#legend .row{display:flex;align-items:center;gap:7px;white-space:nowrap}
+
+#panel{border-left:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;min-height:0;min-width:0}
+#panel .ph{padding:10px 16px;border-bottom:1px solid var(--line2);display:flex;align-items:baseline;gap:10px}
+#panel .ph .tag{font-size:10px;letter-spacing:.18em;color:var(--dim2)}
+#pid{margin-left:auto;font-size:10px;color:var(--dim2);font-variant-numeric:tabular-nums}
+#pbody{overflow-y:auto;padding:14px 18px 48px;flex:1}
+#pbody::-webkit-scrollbar{width:8px}#pbody::-webkit-scrollbar-thumb{background:#2b3338}
+.empty{color:var(--dim2);line-height:2;font-size:12px}
+.who{font-size:13px;font-weight:400;margin:0 0 2px;letter-spacing:.1em}
+.who small{color:var(--dim2);font-size:10.5px;margin-left:8px;letter-spacing:.04em}
+.meta{display:grid;grid-template-columns:46px 1fr;gap:6px 10px;font-size:11.5px;margin:12px 0 4px}
+.meta .k{color:var(--dim2);letter-spacing:.12em}
+.chips{display:flex;gap:5px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);color:var(--dim);padding:1px 7px;font-size:10.5px;border-radius:2px}
+.chip.inf{border-color:#4a4234;color:#b39a63}
+.coord{color:var(--dim2);font-size:10px;margin-left:5px}
+#orig{font-size:16.5px;line-height:2.05;letter-spacing:.045em;color:#eeece1;white-space:pre-wrap;
+  word-break:break-word;border-top:1px solid var(--line2);margin-top:14px;padding-top:14px}
+.note{font-size:11px;color:var(--dim2);line-height:1.75;margin-top:12px;border-left:2px solid var(--line);padding-left:8px}
+.people{margin-top:14px;font-size:11px;color:var(--dim);line-height:1.85}
+.people b{font-weight:400;color:var(--text)}
+.allplaces{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap;align-items:baseline}
+.allplaces .k{color:var(--dim2);font-size:10.5px;letter-spacing:.1em}
+.allplaces span.p{cursor:pointer;color:var(--dim);border-bottom:1px dotted var(--dim2);font-size:11px}
+.allplaces span.p:hover{color:var(--hl)}
+#nav{margin-top:18px;display:flex;gap:6px;border-top:1px solid var(--line2);padding-top:12px}
+#nav button{font:inherit;font-size:11px;color:var(--dim);background:transparent;border:1px solid var(--line);padding:3px 9px;cursor:pointer}
+#nav button:hover{color:var(--text);border-color:var(--dim2)}
+#tip{position:fixed;pointer-events:none;z-index:50;background:#0b0e10;border:1px solid var(--line);padding:5px 9px;
+  font-size:11px;color:var(--text);max-width:330px;line-height:1.6;display:none;box-shadow:0 4px 18px rgba(0,0,0,.55)}
+#tip .d{color:var(--dim2);font-size:10px}
+
+  /* 聚合点数字角标 */
+  text.badge { font-size:9.5px; fill:#c8d2d8; font-weight:600; pointer-events:none; letter-spacing:0; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>南宋·江行</h1>
+    <span class="sub">陸游《入蜀記》乾道六年 1170 ・ 范成大《吳船錄》淳熙四年 1177</span>
+    <div id="filters">
+      <button data-f="all" class="on">全部</button>
+      <button data-f="lu">陸游</button>
+      <button data-f="fan">范成大</button>
+      <button data-f="both">都到過的地點</button>
+      <span id="count"></span>
+    </div>
+  </header>
+  <main>
+    <div id="left">
+      <section id="mapwrap">
+        <div class="vtitle">地 理 · 散點（淡經緯網與江道示意，非圖幅底圖）</div>
+        <div id="legend">
+          <div class="grp">
+            <div class="row"><svg width="26" height="12"><circle cx="6" cy="6" r="4" fill="var(--lu)"/></svg>陸游</div>
+            <div class="row"><svg width="26" height="12"><circle cx="6" cy="6" r="4" fill="var(--fan)"/></svg>范成大</div>
+            <div class="row"><svg width="26" height="12"><circle cx="6" cy="6" r="5.6" fill="none" stroke="var(--lu)" stroke-width="2.2"/><circle cx="6" cy="6" r="5.6" fill="none" stroke="var(--fan)" stroke-width="2.2" stroke-dasharray="3.5 3.5" transform="rotate(45 6 6)"/></svg>兩人都到過</div>
+          </div>
+          <div class="grp">
+            <div class="row"><svg width="40" height="12"><circle cx="5" cy="6" r="2.4" fill="var(--dim)"/><circle cx="16" cy="6" r="3.8" fill="var(--dim)"/><circle cx="30" cy="6" r="5.6" fill="var(--dim)"/></svg>點大＝到訪多</div>
+            <div class="row"><svg width="26" height="12"><circle cx="6" cy="6" r="3.6" fill="#6f7873"/></svg>時間線：原文明確</div>
+            <div class="row"><svg width="26" height="12"><circle cx="6" cy="6" r="3.1" fill="none" stroke="#6f7873" stroke-width="1.4"/></svg>時間線：日期推算</div>
+          </div>
+        </div>
+        <svg id="map"></svg>
+      </section>
+      <section id="chartwrap">
+        <div class="vtitle">時 間 · 兩條泳道（五 → 十二月；日期按「月＋日/31」線性排布）</div>
+        <svg id="chart"></svg>
+      </section>
+    </div>
+    <aside id="panel">
+      <div class="ph"><span class="tag">原 文</span><span id="pid"></span></div>
+      <div id="pbody"><div class="empty">點擊地圖散點或時間線上的點，查看事件原文。<br><br>
+        ・地圖：一點一地，點大小＝該地到訪次數；赭金＝陸游，青藍＝范成大，雙色環＝兩人都到過。<br>
+        ・時間線：上下兩條泳道各屬一人；空心點＝該日為推算而非原文明白。</div></div>
+    </aside>
+  </main>
+</div>
+<div id="tip"></div>
+
+<script>
+/* ============================================================
+   DATA —— 由 build.py 从
+     data/archive/v004_入蜀记_词典补全/data/events.json   (陸游 145)
+     data/archive/v003_吴船录_纯原文匹配/data/events.json  (范成大 109)
+     proto/coords.json
+   合并内联，页面不发起任何网络/文件请求。
+   ============================================================ */
+const DATA = __DATA__;
+
+const P = DATA.people;
+const EV = DATA.events;
+const byId = new Map(EV.map(e => [e.id, e]));
+const PLACES = DATA.places;   // 地名 -> {lat,lon,visits:{lu:[id..],fan:[id..]},first}
+const MONTHS = [5,6,7,8,9,10,11,12.6];   // 末界取 12.6 月，让「十二月六日」留在线内
+
+/* ---------- 状态 ---------- */
+let filter = 'all';
+let selected = null;
+const tip = document.getElementById('tip');
+
+/* 筛选：both = 两人都到过的那些地点，其关联事件全部可见 */
+function visible(e){
+  if (filter === 'all') return true;
+  if (filter === 'lu' || filter === 'fan') return e.person === filter;
+  if (filter === 'both'){
+    const s = PLACES[e.place];
+    return !!(s && s.visits.lu.length && s.visits.fan.length);
+  }
+  return true;
+}
+
+/* ---------- SVG 小工具 ---------- */
+const NS = 'http://www.w3.org/2000/svg';
+function el(tag, attrs, parent){
+  const n = document.createElementNS(NS, tag);
+  if (attrs) for (const k in attrs) n.setAttribute(k, attrs[k]);
+  if (parent) parent.appendChild(n);
+  return n;
+}
+function txt(parent, x, y, s, cls){
+  const t = el('text', {x, y, class: cls || 'lbl'}, parent);
+  t.textContent = s;
+  return t;
+}
+const esc = s => (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+function showTip(ev, html){
+  tip.innerHTML = html; tip.style.display = 'block';
+  const w = tip.offsetWidth, h = tip.offsetHeight, pad = 14;
+  let x = ev.clientX + pad, y = ev.clientY + pad;
+  if (x + w > innerWidth - 8) x = ev.clientX - w - pad;
+  if (y + h > innerHeight - 8) y = ev.clientY - h - pad;
+  tip.style.left = x + 'px'; tip.style.top = y + 'px';
+}
+const hideTip = () => { tip.style.display = 'none'; };
+function bindTip(node, htmlFn){
+  node.addEventListener('mouseenter', ev => showTip(ev, htmlFn()));
+  node.addEventListener('mousemove', ev => showTip(ev, htmlFn()));
+  node.addEventListener('mouseleave', hideTip);
+}
+
+/* ============================================================
+   A. 地图 —— 等经纬度线性映射（原型不需要投影），淡网格 + 江道示意
+   ============================================================ */
+const mapSvg = document.getElementById('map');
+const LON = [102.5, 121.5], LAT = [28.0, 32.8];
+
+function drawMap(){
+  const W = mapSvg.clientWidth || 900, H = mapSvg.clientHeight || 480;
+  mapSvg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  mapSvg.innerHTML = '';
+  const padL = 44, padR = 110, padT = 32, padB = 30;   // 右侧留白给地名标签
+  const px = lon => padL + (lon - LON[0]) / (LON[1] - LON[0]) * (W - padL - padR);
+  const py = lat => padT + (LAT[1] - lat) / (LAT[1] - LAT[0]) * (H - padT - padB);
+  const g = el('g', null, mapSvg);
+
+  /* 经纬网 */
+  for (let lon = 104; lon <= 120; lon += 2){
+    el('line', {x1:px(lon), x2:px(lon), y1:padT, y2:H - padB, class:'grid'}, g);
+    txt(g, px(lon), H - padB + 15, lon + '°E', 'ax').setAttribute('text-anchor','middle');
+  }
+  for (let lat = 29; lat <= 32; lat++){
+    el('line', {x1:padL, x2:W - padR, y1:py(lat), y2:py(lat), class:'grid'}, g);
+    txt(g, padL - 8, py(lat) + 3, lat + '°N', 'ax').setAttribute('text-anchor','end');
+  }
+
+  /* 长江示意折线：只作方位参照，不画航迹以免与散点抢视觉 */
+  const d = 'M' + DATA.river.map(([la, lo]) => px(lo).toFixed(1) + ' ' + py(la).toFixed(1)).join(' L');
+  el('path', {d, fill:'none', stroke:'#1b262c', 'stroke-width':8, 'stroke-linejoin':'round', 'stroke-linecap':'round'}, g);
+
+  /* 站点：先按坐标簇聚合（2km 内视作同一处），再按当前筛选重算每次访问 */
+  const sites = [];
+  for (const cl of DATA.clusters){
+    const names = cl.members;
+    let lu = [], fan = [];
+    for (const nm of names){
+      const s = PLACES[nm];
+      if (!s) continue;
+      lu = lu.concat(s.visits.lu.filter(id => visible(byId.get(id))));
+      fan = fan.concat(s.visits.fan.filter(id => visible(byId.get(id))));
+    }
+    const n = lu.length + fan.length;
+    if (!n) continue;
+    /* 单成员用原名；多成员显示主地名 + 数字角标 */
+    const label = names.length === 1 ? names[0] : (names[0].replace(/[縣府州]$/, '') || names[0]);
+    sites.push({name: label, names, s: cl, lu, fan, n,
+                r: 3 + Math.sqrt(n) * 1.7 + (names.length > 1 ? Math.log2(names.length) * 1.6 : 0)});
+  }
+  sites.sort((a, b) => a.r - b.r);   // 小点先画，大点压在上层
+
+  const gPts = el('g', null, g);
+  for (const p of sites){
+    const cx = px(p.s.lon), cy = py(p.s.lat);
+    const both = p.lu.length && p.fan.length;
+    if (!both){
+      const who = p.lu.length ? 'lu' : 'fan';
+      const c = el('circle', {cx, cy, r:p.r, fill:P[who].color, 'fill-opacity':0.88,
+                              stroke:'#0e1113', 'stroke-width':1.2}, gPts);
+      /* 命中区比可见点大，小点也好点中 */
+      const hit = el('circle', {cx, cy, r:Math.max(7, p.r), fill:'transparent'}, gPts);
+      hit.style.cursor = 'pointer';
+      bindPt(hit, p);
+    } else {
+      /* 两人皆到：外圈双色环（实线赭金 + 45° 虚线青蓝），内芯挖空 */
+      el('circle', {cx, cy, r:p.r, fill:'none', stroke:P.lu.color, 'stroke-width':2.2}, gPts);
+      el('circle', {cx, cy, r:p.r, fill:'none', stroke:P.fan.color, 'stroke-width':2.2,
+                    'stroke-dasharray':'3.5 3.5', transform:`rotate(45 ${cx} ${cy})`}, gPts);
+      const hit = el('circle', {cx, cy, r:Math.max(2, p.r - 3), fill:'#0e1113'}, gPts);
+      hit.style.cursor = 'pointer';
+      bindPt(hit, p);
+    }
+    /* 聚合点：右上角数字角标，告诉读者这里不止一个地点 */
+    if (p.names.length > 1){
+      const bx = cx + p.r * 0.72, by = cy - p.r * 0.72;
+      el('circle', {cx:bx, cy:by, r:6.4, fill:'#0e1113', stroke:'#5a6b74', 'stroke-width':1}, gPts);
+      const bt = txt(gPts, bx, by + 3.2, String(p.names.length), 'badge');
+      bt.setAttribute('text-anchor','middle');
+    }
+  }
+  /* 地名标签：贪心避让——按到访次数从大到小，碰撞就跳过（宁缺勿糊） */
+  const boxes = sites.filter(p => p.n >= 2 || (p.lu.length && p.fan.length))
+                     .sort((a, b) => b.n - a.n);
+  const used = [];
+  const hit = (x, y, w, h) => used.some(b => x < b[0] + b[2] && x + w > b[0] && y < b[1] + b[3] && y + h > b[1]);
+  for (const p of boxes){
+    const cx = px(p.s.lon), cy = py(p.s.lat), w = p.name.length * 10.4 + 4, h = 11;
+    for (const [dx, dy] of [[1,0],[-1,0],[0,-1],[0,1],[1,-0.9],[-1,-0.9],[1,0.9],[-1,0.9]]){
+      const x = dx > 0 ? cx + p.r + 4 : cx - p.r - 4 - w;
+      const y = cy - 4 + dy * (p.r + 12);
+      if (x < padL - 6 || x + w > W - padR + 108 || y < padT || y > H - padB) continue;
+      if (hit(x, y, w, h)) continue;
+      used.push([x, y, w, h]);
+      txt(g, x, y + 8.5, p.name);
+      break;
+    }
+  }
+
+  function bindPt(node, p){
+    bindTip(node, () => {
+      const ids = [...p.lu, ...p.fan];
+      const ds = ids.map(id => byId.get(id).date + (byId.get(id).exact ? '' : '（推算）'));
+      const mem = p.names.length > 1
+        ? `<span class="d">含 ${p.names.length} 處：${p.names.slice(0, 6).join('、')}${p.names.length > 6 ? ' 等' : ''}</span><br>`
+        : '';
+      return `<b>${p.name}</b> <span class="d">陸游 ${p.lu.length} 次 · 范成大 ${p.fan.length} 次</span><br>`
+           + mem
+           + `<span class="d">${ds.slice(0, 8).join(' ／ ')}${ds.length > 8 ? ' …' : ''}</span>`;
+    });
+    /* 点一下选首条；已选中则轮转到该地的下一条 */
+    node.addEventListener('click', () => {
+      const ids = [...p.lu, ...p.fan];
+      if (!ids.length) return;
+      let idx = 0;
+      if (selected && ids.includes(selected)) idx = (ids.indexOf(selected) + 1) % ids.length;
+      select(ids[idx]);
+    });
+  }
+}
+
+/* ============================================================
+   B. 时间线 —— 两条泳道，横轴 5→12 月
+   ============================================================ */
+const chartSvg = document.getElementById('chart');
+const dayVal = e => e.m + Math.min(31, e.d || 1) / 31;   // 连续刻度，月内按日线性
+
+function drawChart(){
+  const W = chartSvg.clientWidth || 900, H = chartSvg.clientHeight || 240;
+  chartSvg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  chartSvg.innerHTML = '';
+  const padL = 74, padR = 40, padT = 26, padB = 32;
+  const innerH = H - padT - padB;
+  const x = m => padL + (m - 5) / 7.6 * (W - padL - padR);   // 5 月 → 12.6 月，陆游十二月那一条也留在框内
+  const g = el('g', null, chartSvg);
+  const mname = {5:'五月',6:'六月',7:'七月',8:'八月',9:'九月',10:'十月',11:'十一月',12.6:'年末'};
+
+  /* 泳道：陆游上、范成下 */
+  const laneH = innerH / 2;
+  const lanes = {lu: padT + laneH * 0.40, fan: padT + laneH * 1.42};   // 两泳道靠拢，减掉中间空档
+
+  for (const m of MONTHS){
+    const xx = x(m);
+    el('line', {x1:xx, x2:xx, y1:padT - 8, y2:padT - 2, stroke:'#2c3439'}, g);       // 月界顶刻
+    el('line', {x1:xx, x2:xx, y1:H - padB, y2:H - padB + 4, stroke:'#2c3439'}, g);   // 月界底刻
+    if (m === 5 || m === 7 || m === 9 || m === 11) {                                // 隔月标字，防挤
+      el('line', {x1:xx, x2:xx, y1:padT - 8, y2:H - padB, class:'grid'}, g);
+      txt(g, xx + 4, H - padB + 18, mname[m], 'ax');
+    }
+  }
+  for (const k of ['lu','fan']){
+    const y = lanes[k];
+    el('rect', {x:padL, y:y - laneH * 0.36, width:W - padL - padR, height:laneH * 0.72,
+                fill:'#111619', 'fill-opacity':0.55}, g);
+    el('line', {x1:padL, x2:W - padR, y1:y, y2:y, stroke:'#232b30'}, g);
+    txt(g, padL - 12, y - 2, P[k].name, 'lbl').setAttribute('text-anchor','end');
+    txt(g, padL - 12, y + 11, P[k].year, 'ax').setAttribute('text-anchor','end');
+  }
+
+  /* 同日多条时上下错开 6px，避免完全重叠 */
+  const slot = {};
+  for (const e of EV){
+    if (!visible(e) || e.m == null || e.d == null || e.m > 12) continue;
+    const key = e.person + '|' + e.m + '|' + e.d;
+    const k = slot[key] = (slot[key] || 0) + 1;
+    const dy = ((k - 1) % 4 - 1.5) * 6;
+    const cx = x(dayVal(e)), cy = lanes[e.person] + dy;
+    if (k > 5) continue;   // 同一人同日 >5 条时只画前 5 条，余者仍可在面板/地图上点到
+    const r = 3.2;
+    const c = el('circle', {
+      cx, cy, r,
+      fill: e.exact ? P[e.person].color : 'none',
+      stroke: e.exact ? 'none' : P[e.person].color,
+      'stroke-width': e.exact ? 0 : 1.5
+    }, g);
+    c.style.cursor = 'pointer';
+    bindTip(c, () => `<b>${P[e.person].name}</b> <span class="d">${e.date}${e.exact ? '' : '（推算）'}</span><br>`
+                   + `${e.place ? esc(e.place) : '<span class="d">（原文未著地名）</span>'}`);
+    c.addEventListener('click', () => select(e.id));
+    if (selected === e.id) el('circle', {cx, cy, r:7, fill:'none', stroke:'#ece9dd', 'stroke-width':1}, g);
+  }
+}
+
+/* ============================================================
+   C. 详情面板
+   ============================================================ */
+function select(id){
+  selected = id;
+  const e = byId.get(id);
+  if (!e) return;
+  document.getElementById('pid').textContent = e.id + ' · 卷' + e.juan + ' · ' + P[e.person].title;
+
+  const s = e.place ? PLACES[e.place] : null;
+  const act = (e.activity || []).map(a => `<span class="chip">${esc(a)}</span>`).join('') || '<span class="chip">—</span>';
+  let h = '';
+  h += `<div class="who" style="color:${P[e.person].color}">${P[e.person].name}<small>${P[e.person].title} · ${P[e.person].year}</small></div>`;
+  h += `<div class="meta">`;
+  h += `<div class="k">日期</div><div>${esc(e.date)} ${e.exact ? '' : '<span class="chip inf">推算</span>'}`
+     + (e.dateSrc ? `<span class="coord">${e.dateSrc}</span>` : '') + `</div>`;
+  h += `<div class="k">地點</div><div>${e.place ? esc(e.place) : '<span style="color:var(--dim2)">原文未著地名</span>'}`
+     + (s ? `<span class="coord">${s.lat.toFixed(2)}°N, ${s.lon.toFixed(2)}°E</span>`
+          : (e.place ? '<span class="coord" style="color:#8a6a3a">無坐標</span>' : '')) + `</div>`;
+  h += `<div class="k">活動</div><div class="chips">${act}</div>`;
+  h += `</div>`;
+  h += `<div id="orig">${esc(e.orig)}</div>`;
+  if (e.note) h += `<div class="note">表注：${esc(e.note)}</div>`;
+  if (e.people && e.people.length){
+    h += `<div class="people">涉及人物：` +
+         e.people.map(p => `<b>${esc(p[0])}</b><span style="color:var(--dim2)">（${esc(p[1])}）</span>`).join('、') + `</div>`;
+  }
+  const others = (e.places || []).filter(p => p !== e.place);
+  if (others.length){
+    h += `<div class="allplaces"><span class="k">同日另及</span>` +
+         others.map(p => `<span class="p" data-p="${esc(p)}">${esc(p)}</span>`).join('') + `</div>`;
+  }
+  const i = EV.findIndex(x => x.id === id);
+  h += `<div id="nav"><button data-d="-1">← 前一條</button><button data-d="1">後一條 →</button></div>`;
+
+  const pb = document.getElementById('pbody');
+  pb.innerHTML = h;
+  pb.scrollTop = 0;
+  pb.querySelectorAll('.allplaces .p').forEach(n => n.onclick = () => {
+    const st = PLACES[n.dataset.p];
+    if (st && st.first) select(st.first);
+  });
+  pb.querySelectorAll('#nav button').forEach(b => b.onclick = () => {
+    select(EV[Math.min(EV.length - 1, Math.max(0, i + Number(b.dataset.d)))].id);
+  });
+
+  drawMap(); drawChart();   // 重画以移动选中圈
+}
+
+/* ---------- 筛选按钮 ---------- */
+document.querySelectorAll('#filters button').forEach(b => b.onclick = () => {
+  filter = b.dataset.f;
+  document.querySelectorAll('#filters button').forEach(x => x.classList.toggle('on', x === b));
+  updateCount(); drawMap(); drawChart();
+});
+function updateCount(){
+  document.getElementById('count').textContent = EV.filter(visible).length + ' / ' + EV.length + ' 條';
+}
+
+/* ---------- 版式与启动 ---------- */
+function layout(){
+  [mapSvg, chartSvg].forEach(sv => {
+    sv.style.width = sv.parentNode.clientWidth + 'px';
+    sv.style.height = sv.parentNode.clientHeight + 'px';
+  });
+  drawMap(); drawChart();
+}
+let rt = null;
+addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(layout, 120); });
+layout(); updateCount();
+select(EV[0].id);
+</script>
+</body>
+</html>

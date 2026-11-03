@@ -1,0 +1,13 @@
+# 缓存与生成物
+__pycache__/
+*.pyc
+.venv/
+
+# 大文件与二进制产物（不纳入版本控制）
+source/**/*.pdf
+proto/_font.woff2
+proto/index.html
+
+# 系统文件
+.DS_Store
+Thumbs.db

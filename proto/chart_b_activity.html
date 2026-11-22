@@ -69,12 +69,13 @@ function T(p,x,y,s,c,an){var n=E("text",{x:x,y:y,"class":c||"ax"},p);if(an)n.set
   T(svg,(L+W-R)/2,H-12,"条数（绝对数，非百分比；横轴从 0 起）","ax","middle");
   var rowH=(H-T0-B)/D.length;
   D.forEach(function(d,i){
-    var y=T0+i*rowH, cy=y+rowH/2, w=px(d[2])-px(0), bh=rowH*0.56;
-    var rect=E("rect",{x:px(0),y:cy-bh/2,width:w,height:bh,fill:d[3]||"#6d675c","fill-opacity":d[3]?0.82:0.72},svg);
-    if(d[3])E("rect",{x:px(0),y:cy-bh/2,width:w,height:bh,fill:"none",stroke:d[3],"stroke-width":1.6},svg);
-    var tt=E("title",{},rect);tt.textContent=d[0]+" "+d[2]+" 条";
-    T(svg,L-16,cy+5,d[0],"cat","end");
-    T(svg,px(d[2])+10,cy+5,String(d[2]),"val");
+    var name=d[0], v=d[1], color=d[2];
+    var y=T0+i*rowH, cy=y+rowH/2, w=px(v)-px(0), bh=rowH*0.56;
+    var rect=E("rect",{x:px(0),y:cy-bh/2,width:w,height:bh,fill:color||"#6d675c","fill-opacity":color?0.82:0.72},svg);
+    if(color)E("rect",{x:px(0),y:cy-bh/2,width:w,height:bh,fill:"none",stroke:color,"stroke-width":1.6},svg);
+    var tt=E("title",{},rect);tt.textContent=name+" "+v+" 条";
+    T(svg,L-16,cy+5,name,"cat","end");
+    T(svg,px(v)+10,cy+5,String(v),"val");
   });
   /* 合计注记 */
   T(svg,W-R,H-B-8,"合计 494 条标注（236+110+59+46+27+16）","ax","end");

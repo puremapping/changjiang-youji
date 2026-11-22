@@ -12,16 +12,14 @@
     "place_waypoint": [],
     "place_departed": [],
     "activity": [
-      "行路"
+      "其他"
     ],
     "landscape": [
       "城隍"
     ],
     "weather": [],
     "emotion": [],
-    "imagery": [
-      "月"
-    ],
+    "imagery": [],
     "note": "原文未著地名（无「动词+词典地名」锚定）",
     "person_id": "p-lu-you",
     "source_id": "src-lu-you-wg",
@@ -52,7 +50,6 @@
     "weather": [],
     "emotion": [],
     "imagery": [
-      "月",
       "雲"
     ],
     "note": "锚定：至法雲寺（到达落点）",
@@ -212,9 +209,7 @@
     "landscape": [
       "山水"
     ],
-    "weather": [
-      "寒"
-    ],
+    "weather": [],
     "emotion": [],
     "imagery": [
       "雪",
@@ -295,7 +290,9 @@
     ],
     "place_departed": [],
     "activity": [
-      "行路"
+      "行路",
+      "游观",
+      "交游"
     ],
     "landscape": [
       "古蹟",
@@ -398,7 +395,6 @@
     ],
     "emotion": [],
     "imagery": [
-      "月",
       "舟"
     ],
     "note": "仅记经过三閘，原文未著当日停驻地",
@@ -588,7 +584,6 @@
     ],
     "weather": [],
     "emotion": [
-      "忧慮",
       "旷達",
       "憐憫"
     ],
@@ -901,9 +896,7 @@
     "weather": [
       "寒"
     ],
-    "emotion": [
-      "追慕"
-    ],
+    "emotion": [],
     "imagery": [
       "水",
       "舟"
@@ -1052,9 +1045,7 @@
       "其他"
     ],
     "landscape": [
-      "山水",
-      "古蹟",
-      "寺觀"
+      "山水"
     ],
     "weather": [],
     "emotion": [],
@@ -1356,7 +1347,7 @@
     "place_waypoint": [],
     "place_departed": [],
     "activity": [
-      "行路"
+      "其他"
     ],
     "landscape": [
       "山水"
@@ -1492,7 +1483,6 @@
     ],
     "emotion": [],
     "imagery": [
-      "月",
       "水",
       "山"
     ],
@@ -1801,7 +1791,9 @@
       "雨",
       "寒"
     ],
-    "emotion": [],
+    "emotion": [
+      "驚嘆"
+    ],
     "imagery": [
       "石",
       "雪",
@@ -1837,11 +1829,10 @@
       "城隍",
       "寺觀"
     ],
-    "weather": [
-      "雨",
-      "風"
+    "weather": [],
+    "emotion": [
+      "驚嘆"
     ],
-    "emotion": [],
     "imagery": [
       "水",
       "石",
@@ -1931,9 +1922,7 @@
       "雨",
       "風"
     ],
-    "emotion": [
-      "忧慮"
-    ],
+    "emotion": [],
     "imagery": [
       "月",
       "水",
@@ -1963,16 +1952,15 @@
     "place_waypoint": [],
     "place_departed": [],
     "activity": [
-      "行路"
+      "行路",
+      "考订"
     ],
     "landscape": [
       "山水",
       "古蹟",
       "城隍"
     ],
-    "weather": [
-      "暑"
-    ],
+    "weather": [],
     "emotion": [],
     "imagery": [
       "水",
@@ -2009,8 +1997,7 @@
     ],
     "weather": [],
     "emotion": [
-      "追慕",
-      "忧慮"
+      "追慕"
     ],
     "imagery": [
       "月",
@@ -2038,9 +2025,7 @@
       "游观"
     ],
     "landscape": [
-      "山水",
-      "古蹟",
-      "寺觀"
+      "山水"
     ],
     "weather": [
       "晴"
@@ -2347,9 +2332,7 @@
       "雨",
       "寒"
     ],
-    "emotion": [
-      "旷達"
-    ],
+    "emotion": [],
     "imagery": [
       "水",
       "雪",
@@ -2471,9 +2454,7 @@
       "城隍",
       "寺觀"
     ],
-    "weather": [
-      "風"
-    ],
+    "weather": [],
     "emotion": [],
     "imagery": [
       "水",
@@ -2556,9 +2537,7 @@
     "weather": [
       "風"
     ],
-    "emotion": [
-      "追慕"
-    ],
+    "emotion": [],
     "imagery": [
       "水",
       "石",
@@ -2598,16 +2577,16 @@
     ],
     "landscape": [
       "山水",
-      "古蹟",
       "城隍",
-      "寺觀",
       "市集"
     ],
     "weather": [
       "雨",
       "風"
     ],
-    "emotion": [],
+    "emotion": [
+      "驚嘆"
+    ],
     "imagery": [
       "月",
       "水",
@@ -2744,7 +2723,6 @@
       "驚嘆"
     ],
     "imagery": [
-      "月",
       "水",
       "石",
       "雲",
@@ -2811,7 +2789,8 @@
     "place_waypoint": [],
     "place_departed": [],
     "activity": [
-      "行路"
+      "行路",
+      "交游"
     ],
     "landscape": [
       "城隍"
@@ -2887,9 +2866,7 @@
       "城隍"
     ],
     "weather": [],
-    "emotion": [
-      "旷達"
-    ],
+    "emotion": [],
     "imagery": [
       "水",
       "雲",
@@ -3192,10 +3169,7 @@
       "城隍",
       "寺觀"
     ],
-    "weather": [
-      "風",
-      "寒"
-    ],
+    "weather": [],
     "emotion": [
       "忧慮"
     ],
@@ -3284,7 +3258,9 @@
     "weather": [
       "風"
     ],
-    "emotion": [],
+    "emotion": [
+      "驚嘆"
+    ],
     "imagery": [
       "月",
       "水",
@@ -3327,9 +3303,7 @@
     "weather": [
       "風"
     ],
-    "emotion": [
-      "忧慮"
-    ],
+    "emotion": [],
     "imagery": [
       "月",
       "水",
@@ -3363,7 +3337,8 @@
     ],
     "place_departed": [],
     "activity": [
-      "行路"
+      "行路",
+      "考订"
     ],
     "landscape": [
       "山水",
@@ -3402,7 +3377,8 @@
     "place_waypoint": [],
     "place_departed": [],
     "activity": [
-      "行路"
+      "行路",
+      "交游"
     ],
     "landscape": [
       "山水",
@@ -3457,10 +3433,7 @@
       "雨",
       "寒"
     ],
-    "emotion": [
-      "忧慮",
-      "旷達"
-    ],
+    "emotion": [],
     "imagery": [
       "水",
       "石",
@@ -3607,7 +3580,8 @@
     "place_waypoint": [],
     "place_departed": [],
     "activity": [
-      "行路"
+      "行路",
+      "考订"
     ],
     "landscape": [
       "山水",
@@ -3642,7 +3616,6 @@
     "place_waypoint": [],
     "place_departed": [],
     "activity": [
-      "行路",
       "交游"
     ],
     "landscape": [
@@ -3675,9 +3648,7 @@
       "游观"
     ],
     "landscape": [
-      "古蹟",
-      "城隍",
-      "寺觀"
+      "城隍"
     ],
     "weather": [],
     "emotion": [],
@@ -3825,7 +3796,8 @@
     "place_waypoint": [],
     "place_departed": [],
     "activity": [
-      "行路"
+      "行路",
+      "交游"
     ],
     "landscape": [
       "山水",
@@ -3914,7 +3886,6 @@
     "weather": [],
     "emotion": [],
     "imagery": [
-      "月",
       "水",
       "舟"
     ],
@@ -4213,9 +4184,7 @@
       "游观"
     ],
     "landscape": [
-      "山水",
-      "古蹟",
-      "寺觀"
+      "山水"
     ],
     "weather": [
       "晴",
@@ -4359,9 +4328,7 @@
       "城隍",
       "寺觀"
     ],
-    "weather": [
-      "寒"
-    ],
+    "weather": [],
     "emotion": [
       "驚嘆"
     ],
@@ -4764,9 +4731,7 @@
       "行路"
     ],
     "landscape": [
-      "古蹟",
       "城隍",
-      "寺觀",
       "市集"
     ],
     "weather": [],
@@ -4853,18 +4818,14 @@
     ],
     "place_departed": [],
     "activity": [
-      "行路",
-      "游观"
+      "行路"
     ],
     "landscape": [
-      "山水",
-      "古蹟",
-      "寺觀"
+      "山水"
     ],
     "weather": [],
     "emotion": [],
     "imagery": [
-      "月",
       "水",
       "竹",
       "舟",
@@ -4931,9 +4892,7 @@
       "寺觀"
     ],
     "weather": [],
-    "emotion": [
-      "旷達"
-    ],
+    "emotion": [],
     "imagery": [
       "水",
       "柳",
@@ -5007,7 +4966,6 @@
       "市集"
     ],
     "weather": [
-      "雨",
       "風"
     ],
     "emotion": [],
@@ -5503,7 +5461,6 @@
     ],
     "place_departed": [],
     "activity": [
-      "行路",
       "交游"
     ],
     "landscape": [
@@ -5657,7 +5614,8 @@
       "寒"
     ],
     "emotion": [
-      "旷達"
+      "旷達",
+      "忧慮"
     ],
     "imagery": [
       "水",

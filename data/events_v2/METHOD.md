@@ -38,8 +38,8 @@ activity[] / landscape[] / weather[] / emotion[] / imagery[] / orig / note`
 
 - 两书 id 前缀：入蜀记 `RSC-001~`，吴船录 `WCL-001~`（沿用旧版规则）。
 - `person_id` 挂 `p-lu-you` / `p-fan-chengda`；`source_id` 挂 works 表 book 级
-  （`w-ru-shu-ji` / `w-wu-chuan-lu`）。**works 表尚未建，此处 `source_id`/`person_id`/`place_id`
-  按约定占位，基础表（works/persons/places/timeline）建好后批量回填**（见 §8 未决项）。
+  （`w-ru-shu-ji` / `w-wu-chuan-lu`）。基础表（works/persons/places/timeline）已建，
+  外键已回填真实 id（2026-11-22 校验悬空 0），非占位。
 - 富化 4 字段 `landscape/weather/emotion/imagery` 为**可选**字段，旧版没有；**只标原文明确
   出现者，不推衍**（如「覺濤瀾洶湧可駭」→ `emotion` 含「驚嘆」；「風作終日不行」→ `weather` 含「風」）。
 
@@ -173,9 +173,9 @@ v002 METHOD §5.2b 列「11 条抽取失败」，**v004 已更正：实为 6 条
 
 ## 8. 未决项 / 后续
 
-1. **基础表未建**：`works/persons/places/timeline` 尚未建，本表 `source_id`/`person_id`/`place_id`
-   为占位（入蜀记 `w-ru-shu-ji`/`p-lu-you`；吴船录 `w-wu-chuan-lu`/`p-fan-chengda`），基础表
-   建好后统一回填。works 表 17 条已交付（`data/works_v1/`），其中 place_id/author_id 同为占位。
+1. **基础表占位已回填（2026-11-22）**：`source_id`/`person_id` 与 `place_id` 均已挂
+   base/works 真实 id，悬空校验 0。2026-11-22 任务B：RSC-089/WCL-073 place_id 改指
+   `pl-東坡-黃州`、WCL-042 改指 `pl-西山-忠州`（同名异地拆分）。
 2. **吴船录 19 条词典未见标点本**：`獅子峰/涪翁亭/寇忠愍公祠/整暇堂/雅歌堂/白雲閣/洛水/
    鷹鳥洲/淘珠泉/過溪亭/仙都觀/臨皋亭/小金橋/雪堂東坡/牛心嶺/青蓮閣/伏龍觀/蓮花峰/登天王廟`
    ——这些在 v003 四库本词典里有关联写法，标点本（知不足斋/钦定四库本）字形未直接命中，仅

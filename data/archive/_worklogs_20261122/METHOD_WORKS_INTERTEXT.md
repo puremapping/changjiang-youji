@@ -1,3 +1,7 @@
+> **归档指针（2026-11-22 整理）**：本文件为并行过程稿，已移至 `data/archive/_worklogs_20261122/METHOD_WORKS_INTERTEXT.md`；
+> 其中独特内容已并入唯一权威方法文档 `data/base/METHOD.md` §10。复现脚本旧路径 `data/base/_works_intertext_work/`
+> 已移至 `data/archive/_worklogs_20261122/scripts/_works_intertext_work/`。`data/audit/intertexts_works.md` 中的引用仍指本节。
+
 # works 層互文提取方法（METHOD_WORKS_INTERTEXT）
 
 > 本文件只記述本次「works 加 orig + works 層互文」的工程方法與結果。

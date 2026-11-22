@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>266 天江行：行路 236 条，游观 110 条，交游 59 条</title>
+<!--
+  图 B｜旅途构成（chart_b_activity.html）
+  规格来源：proto/CHART_SPEC.md。结论标题 / 数据 / 数据源均由主会话给定，本文件只做视觉实现。
+
+  设计决策记录：
+  1. 这是「多标签计数」：同一天可命中多个 activity，合计 494 > 266 事件数，
+     故用横向条形，绝不画成 100% 饼图；标题直接报条数，不报百分比。
+  2. 横轴从 0 起，等距线性，最大 236，刻度 0/50/100/150/200/250。
+  3. 五作者配色固定，但本图是跨作者、跨书的汇总，条形用中性深墨色，
+     唯前三名（标题点名者）用对应强调色描边，避免把颜色误读为作者区分。
+  4. 数字一个未改：236 / 110 / 59 / 46 / 27 / 16，合计 494。
+  5. 数据源照抄任务书原文。
+-->
+<style>
+:root{--bg:#f4f1e8;--panel:#fbf9f2;--line:#d8d2c2;--line2:#e6e1d3;--ink:#33302a;--dim:#6d675c;--dim2:#98917f;
+  --lu:#b0741c;--fan:#2c7da0;--liu:#6a9455;}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased;padding:28px 22px 34px}
+.card{max-width:1100px;margin:0 auto}
+header{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:18px}
+h1{font-size:25px;font-weight:600;letter-spacing:.06em;margin:0 0 10px;line-height:1.45}
+.sub{font-size:12.5px;color:var(--dim);line-height:1.7}
+.block{background:var(--panel);border:1px solid var(--line);padding:14px 10px 6px}
+svg{display:block;width:100%;height:auto}
+.src{margin-top:14px;font-size:11px;color:var(--dim2);text-align:right}
+svg text{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif}
+svg .ax{font-size:11px;fill:#98917f}
+svg .cat{font-size:14px;fill:#33302a}
+svg .val{font-size:13px;font-weight:600;fill:#33302a}
+svg .grid{stroke:#e4dfd0;stroke-width:1}
+svg .zero{stroke:#bdb6a4;stroke-width:1.2}
+</style>
+</head>
+<body>
+<div class="card">
+  <header>
+    <h1>266 天江行：行路 236 条，游观 110 条，交游 59 条</h1>
+    <div class="sub">两书 266 条事件的 activity 多标签计数 · 同一天可命中多类，合计 494 条标注 &gt; 266 条事件 · 图中均为绝对条数，非占比</div>
+  </header>
+  <div class="block"><svg id="chart" viewBox="0 0 1000 500" role="img" aria-label="活动类型条数横向条形图"></svg></div>
+  <div class="src">来源：data/events_v2 两书 266 条 activity 字段｜审校 2026-11-22</div>
+</div>
+<script>
+/* 数据照抄任务书图 B：行路 236 / 游观 110 / 交游 59 / 考订 46 / 风土 27 / 其他 16。
+   注：JSON 中的字面为「游观」等简体受控词，图按任务书用字呈现，数值未变。 */
+var D=[["行路",236,"#b0741c"],["游观",110,"#8f6bb0"],["交游",59,"#2c7da0"],
+       ["考订",46,null],["风土",27,null],["其他",16,null]];
+var NS="http://www.w3.org/2000/svg";
+function E(t,a,p){var n=document.createElementNS(NS,t);if(a)for(var k in a)n.setAttribute(k,a[k]);if(p)p.appendChild(n);return n;}
+function T(p,x,y,s,c,an){var n=E("text",{x:x,y:y,"class":c||"ax"},p);if(an)n.setAttribute("text-anchor",an);n.textContent=s;return n;}
+(function(){
+  var svg=document.getElementById("chart");
+  var L=110,R=90,T0=40,B=56,W=1000,H=500;
+  var xmax=250;
+  function px(v){return L+v/xmax*(W-L-R);}
+  /* 网格 + 刻度（从 0 起） */
+  [0,50,100,150,200,250].forEach(function(v){
+    var x=px(v);
+    E("line",{x1:x,x2:x,y1:T0-8,y2:H-B,"class":v===0?"zero":"grid"},svg);
+    T(svg,x,H-B+22,String(v),"ax","middle");
+  });
+  T(svg,(L+W-R)/2,H-12,"条数（绝对数，非百分比；横轴从 0 起）","ax","middle");
+  var rowH=(H-T0-B)/D.length;
+  D.forEach(function(d,i){
+    var y=T0+i*rowH, cy=y+rowH/2, w=px(d[2])-px(0), bh=rowH*0.56;
+    var rect=E("rect",{x:px(0),y:cy-bh/2,width:w,height:bh,fill:d[3]||"#6d675c","fill-opacity":d[3]?0.82:0.72},svg);
+    if(d[3])E("rect",{x:px(0),y:cy-bh/2,width:w,height:bh,fill:"none",stroke:d[3],"stroke-width":1.6},svg);
+    var tt=E("title",{},rect);tt.textContent=d[0]+" "+d[2]+" 条";
+    T(svg,L-16,cy+5,d[0],"cat","end");
+    T(svg,px(d[2])+10,cy+5,String(d[2]),"val");
+  });
+  /* 合计注记 */
+  T(svg,W-R,H-B-8,"合计 494 条标注（236+110+59+46+27+16）","ax","end");
+})();
+</script>
+</body>
+</html>

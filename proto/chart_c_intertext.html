@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>五人笔下的前贤：李白 77 次，苏轼 52 次</title>
+<!--
+  图 C｜互文网络（chart_c_intertext.html）
+  规格来源：proto/CHART_SPEC.md。图型 / 结论标题 / 数据 / 数据源均由主会话给定。
+
+  设计决策记录（供后续修改者）：
+  1. 连线粗细 = 引用条数，线性从零起、不截断：width = count × (11/77)。
+     最细的一条（酈道元 3）约 0.43px，如实画细，同时用数字标签保证可读。
+  2. 规格只给了「target 总分布」（77/52/41/25/10/8/4/3），并未给
+     「某作者→某前贤」的分项条数。为避免凭空编数，本图把五位作者作为**来源组**
+     （左侧 source 节点，五作者色点标识），画「五人 → 前贤」的**汇总**连线，
+     不画 5×8 条带臆造权重的边。若主会话日后给出分项矩阵，可在此处替换为分边。
+  3. relation 分布与 source_table 是**全库汇总**，放在右下说明框，不作为边的权重。
+  4. 点任一前贤节点 = 展开一条原文引文（quote）。引文照抄 data/base/intertexts.json，
+     繁体字形一字未改，均为审校确认的原文连续子串。
+  5. 数据源标注照抄任务书。
+-->
+<style>
+:root{--bg:#f4f1e8;--panel:#fbf9f2;--line:#d8d2c2;--line2:#e6e1d3;--ink:#33302a;--dim:#6d675c;--dim2:#98917f;
+ --liu:#6a9455;--su:#8f6bb0;--lu:#b0741c;--fan:#2c7da0;--zhang:#b05a5a}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased;padding:26px 22px 34px}
+.card{max-width:1240px;margin:0 auto}
+header{border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:16px}
+h1{font-size:25px;font-weight:600;letter-spacing:.05em;margin:0 0 9px}
+.sub{font-size:12.5px;color:var(--dim);line-height:1.7}
+.wrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,0.9fr);gap:16px;align-items:start}
+.block{background:var(--panel);border:1px solid var(--line)}
+svg{display:block;width:100%;height:auto}
+svg text{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif}
+svg .ax{font-size:11px;fill:#98917f}
+svg .lbl{font-size:13px;fill:#33302a}
+svg .cnt{font-size:12px;font-weight:600;fill:#33302a}
+svg .cap{font-size:11px;fill:#8b8474}
+.side{border:1px solid var(--line);background:var(--panel);padding:14px 16px}
+.side h2{font-size:13px;font-weight:600;letter-spacing:.1em;margin:0 0 10px;color:var(--dim)}
+.kv{display:flex;justify-content:space-between;font-size:12.5px;padding:3px 0;border-bottom:1px dotted var(--line2)}
+.kv b{font-weight:600;font-variant-numeric:tabular-nums}
+.quote{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+.quote .who{font-size:12px;color:var(--dim);margin-bottom:7px}
+.quote .q{font-size:14.5px;line-height:1.95;color:#1f1d18;white-space:pre-wrap;word-break:break-word}
+.quote .id{font-size:10.5px;color:var(--dim2);margin-top:9px}
+.hint{font-size:11.5px;color:var(--dim2);line-height:1.7}
+.src{margin-top:14px;font-size:11px;color:var(--dim2);text-align:right}
+</style>
+</head>
+<body>
+<div class="card">
+  <header>
+    <h1>五人笔下的前贤：李白 77 次，苏轼 52 次</h1>
+    <div class="sub">223 条互文 · 连线粗细＝引用条数（线性自零）· 点右侧任一前贤查看原文引文（繁体照抄，原文连续子串）</div>
+  </header>
+  <div class="wrap">
+    <div class="block"><svg id="chart" viewBox="0 0 760 700" role="img" aria-label="五作者指向前贤的互文网络节点连线图"></svg></div>
+    <div class="side">
+      <h2>全库构成</h2>
+      <div class="kv"><span>events 层</span><b>101</b></div>
+      <div class="kv"><span>works 层</span><b>122</b></div>
+      <div style="height:12px"></div>
+      <div class="kv"><span>追慕</span><b>107</b></div>
+      <div class="kv"><span>纪其遗迹</span><b>66</b></div>
+      <div class="kv"><span>考订</span><b>44</b></div>
+      <div class="kv"><span>质疑</span><b>4</b></div>
+      <div class="kv"><span>唱和</span><b>2</b></div>
+      <div class="quote" id="q">
+        <div class="who">原文引文 · 点前贤节点切换</div>
+        <div class="q" id="qtext">在左侧连线图中点选一位前贤（李白、苏轼……），此处显示一条原文引文。</div>
+        <div class="id" id="qmeta"></div>
+      </div>
+      <div style="height:12px"></div>
+      <div class="hint">说明：规格给出的为 target 总分布，图为「五人 → 前贤」汇总连线，未臆造按作者拆分的条数。int-066 已作废，不计入 223 条。</div>
+    </div>
+  </div>
+  <div class="src">来源：data/base/intertexts.json（223 条，引文 100% 原文连续子串）｜审校 2026-11-22</div>
+</div>
+<script>
+/* 数据照抄任务书图 C：target 8 项 + 一条真实引文（繁体，照抄 intertexts.json）。 */
+var TARGETS=[
+ {n:"李白",     v:77, id:"int-003",  rel:"追慕",     q:"李太白詩云「維舟至長蘆，目送煙雲高」是也。"},
+ {n:"苏轼",     v:52, id:"int-001",  rel:"考订",     q:"蓋葬師云：「駝負重則行遠也。」然東坡先生樂府固已云：「誰似臨平山上塔，亭亭，迎客西來送客行。」則臨平有塔亦久矣。"},
+ {n:"黄庭坚",   v:41, id:"int-047",  rel:"追慕",     q:"黃魯直亦云：「頭阤全盛時，宮殿梯空級。」藏殿後有南齊王簡棲碑，唐開元六年建。"},
+ {n:"杜甫",     v:25, id:"int-060",  rel:"追慕",     q:"杜子美有《送石首薛明府》詩，即此邑也。"},
+ {n:"白居易",   v:10, id:"int-032",  rel:"考订",     q:"然白樂天詩固已云：「潯陽欲到思無窮，庾亮樓南湓口東。」則承誤亦久矣。"},
+ {n:"颜真卿",   v:8,  id:"int-033",  rel:"纪其遗迹", q:"唐碑亦甚多，惟顏魯公題名，最為時所傳。"},
+ {n:"诸葛亮",   v:4,  id:"int-070",  rel:"追慕",     q:"諸葛孔明送費祎使吳，曰：「萬里之行，始於此。」後因以名橋。"},
+ {n:"酈道元",   v:3,  id:"int-103",  rel:"考订",     q:"《水經》云：「彭蠡之口，有石鐘山焉。」酈元以為下臨深潭，微風鼓浪，水石相搏，聲如洪鐘。"}
+];
+var AUTH=[["柳宗元","#6a9455"],["苏轼","#8f6bb0"],["陆游","#b0741c"],["范成大","#2c7da0"],["张岱","#b05a5a"]];
+var NS="http://www.w3.org/2000/svg";
+function E(t,a,p){var n=document.createElementNS(NS,t);if(a)for(var k in a)n.setAttribute(k,a[k]);if(p)p.appendChild(n);return n;}
+function T(p,x,y,s,c,an){var n=E("text",{x:x,y:y,"class":c||"ax"},p);if(an)n.setAttribute("text-anchor",an);n.textContent=s;return n;}
+(function(){
+  var svg=document.getElementById("chart");
+  var sx0=150, sy0=350;                 // 来源节点（五人组）
+  var tx=520;                            // 前贤节点列
+  var y0=72, dy=74;
+  /* 五作者色点：来源组标识（不携带分项权重） */
+  AUTH.forEach(function(a,i){
+    var yy=sy0-52+i*26;
+    E("circle",{cx:sx0,cy:yy,r:5.2,fill:a[1],stroke:"#fbf9f2","stroke-width":1.2},svg);
+    T(svg,sx0+12,yy+4,a[0],"cap");
+  });
+  T(svg,sx0,sy0+62,"五人筆下","lbl","middle");
+  T(svg,sx0,sy0+80,"events 101 ＋ works 122","cap","middle");
+  var hub=E("circle",{cx:sx0,cy:sy0,r:17,fill:"#f4f1e8",stroke:"#33302a","stroke-width":1.6},svg);
+  var ht=E("title",{},hub);ht.textContent="五作者来源组（汇总 223 条）";
+
+  /* 连线：线性从零，width = v × (11/77) */
+  TARGETS.forEach(function(d,i){
+    var ty=y0+i*dy;
+    var w=d.v*(11/77);
+    var path="M"+(sx0+17)+" "+sy0+" C"+(sx0+180)+" "+sy0+","+(tx-150)+" "+ty+","+(tx-16)+" "+ty;
+    var e=E("path",{d:path,fill:"none",stroke:"#9a9382","stroke-opacity":0.62,
+                    "stroke-width":Math.max(0.35,w)},svg);
+    var et=E("title",{},e);et.textContent=d.n+" "+d.v+" 次（汇总）";
+
+    var node=E("circle",{cx:tx,cy:ty,r:7+Math.sqrt(d.v)*1.5,fill:"#fbf9f2",stroke:"#33302a","stroke-width":1.5},svg);
+    node.style.cursor="pointer";
+    var nt=E("title",{},node);nt.textContent=d.n+" "+d.v+" 次 · 点击查看原文";
+    T(svg,tx+26,ty-2,d.n,"lbl");
+    T(svg,tx+26,ty+15,d.v+" 次","cnt");
+
+    function show(){
+      document.getElementById("qtext").textContent=d.q;
+      document.getElementById("qmeta").textContent=d.id+" · "+d.rel+"（"+d.n+" · "+d.v+" 次）";
+      [].forEach.call(svg.querySelectorAll("circle.pick"),function(c){c.setAttribute("fill","#fbf9f2");});
+      node.setAttribute("fill","#e6ddc9");
+    }
+    node.setAttribute("class","pick");
+    node.addEventListener("click",show);
+    e.style.cursor="pointer";
+    e.addEventListener("click",show);
+    if(i===0) show();
+  });
+  T(svg,16,684,"连线粗细＝引用条数，自零线性；最细一条（酈道元 3）如实画细。","cap");
+})();
+</script>
+</body>
+</html>

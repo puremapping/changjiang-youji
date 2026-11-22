@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>江上多风：67 条风，39 条雨，35 条寒</title>
+<!--
+  图 D｜天气与心境（chart_d_weather_emotion.html）
+  规格来源：proto/CHART_SPEC.md。结论标题 / 数据 / 数据源均由主会话给定。
+
+  设计决策记录：
+  1. 两组小条形并排（天气 / 情绪），**不用双轴**；各自独立从零起，共用「条数」语义。
+  2. 样本小：只标原文明确出现者，报绝对条数，不报百分比。
+  3. 怜悯仅 1 条，如实画极小（线性刻度下＝满轴的 1/20，约 22px，是图中最短条），不放大、不省略；
+     代码里的 Math.max(...,2) 只是防止 0 宽数值不可见的保底，本图未触发。
+  4. 形状冗余编码：情绪组每项带一个小符号（惊叹◇ / 忧虑▽ / 旷达○ / 追慕□ / 怜悯·），
+     不只靠颜色区分。
+  5. 字形：图中标签依任务书用字（简体）；原文引字本图未引用，无繁简照抄问题。
+  6. 数字照抄：天气 风67 雨39 寒35 晴17 暑14 雾4；情绪 惊叹19 忧虑17 旷达16 追慕13 怜悯1。
+-->
+<style>
+:root{--bg:#f4f1e8;--panel:#fbf9f2;--line:#d8d2c2;--line2:#e6e1d3;--ink:#33302a;--dim:#6d675c;--dim2:#98917f}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased;padding:26px 22px 34px}
+.card{max-width:1180px;margin:0 auto}
+header{border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:6px}
+h1{font-size:25px;font-weight:600;letter-spacing:.05em;margin:0 0 9px}
+.sub{font-size:12.5px;color:var(--dim);line-height:1.7}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.block{background:var(--panel);border:1px solid var(--line);padding:10px 8px 4px}
+.block h2{font-size:14px;font-weight:600;letter-spacing:.1em;margin:4px 0 0 8px;color:var(--dim)}
+svg{display:block;width:100%;height:auto}
+.src{margin-top:14px;font-size:11px;color:var(--dim2);text-align:right}
+svg text{font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif}
+svg .ax{font-size:11px;fill:#98917f}
+svg .cat{font-size:13px;fill:#33302a}
+svg .val{font-size:12px;font-weight:600;fill:#33302a}
+svg .grid{stroke:#e4dfd0;stroke-width:1}
+svg .zero{stroke:#bdb6a4;stroke-width:1.2}
+</style>
+</head>
+<body>
+<div class="card">
+  <header>
+    <h1>江上多风：67 条风，39 条雨，35 条寒</h1>
+    <div class="sub">两书 266 条事件 · 只标原文明确出现者 · 样本小，报绝对条数不报百分比 · 两组独立零起条形，无双轴</div>
+  </header>
+  <div class="grid">
+    <div class="block">
+      <h2>天气（风 67 / 雨 39 / 寒 35 / 晴 17 / 暑 14 / 雾 4）</h2>
+      <svg id="w" viewBox="0 0 560 380" role="img" aria-label="天气条数条形图"></svg>
+    </div>
+    <div class="block">
+      <h2>情绪（惊叹 19 / 忧虑 17 / 旷达 16 / 追慕 13 / 怜悯 1）</h2>
+      <svg id="e" viewBox="0 0 560 380" role="img" aria-label="情绪条数条形图"></svg>
+    </div>
+  </div>
+  <div class="src">来源：data/events_v2 weather/emotion 字段（审校后）｜2026-11-22</div>
+</div>
+<script>
+/* 数据照抄任务书图 D。字形注记：数据文件中天气为「風/霧」、情绪为「驚嘆/忧慮/旷達/憐憫」，
+   图按任务书用字显示；数值一字未改。 */
+var W=[["风",67,"#2c7da0"],["雨",39,"#2c7da0"],["寒",35,"#2c7da0"],
+       ["晴",17,"#2c7da0"],["暑",14,"#2c7da0"],["雾",4,"#2c7da0"]];
+var EMO=[["惊叹",19,"◇","#b0741c"],["忧虑",17,"▽","#8f6bb0"],["旷达",16,"○","#6a9455"],
+         ["追慕",13,"□","#b05a5a"],["怜悯",1,"·","#6d675c"]];
+var NS="http://www.w3.org/2000/svg";
+function EL(t,a,p){var n=document.createElementNS(NS,t);if(a)for(var k in a)n.setAttribute(k,a[k]);if(p)p.appendChild(n);return n;}
+function T(p,x,y,s,c,an){var n=EL("text",{x:x,y:y,"class":c||"ax"},p);if(an)n.setAttribute("text-anchor",an);n.textContent=s;return n;}
+function draw(id,data,xmax,shapeMode){
+  var svg=document.getElementById(id), L=64,R=52,T0=26,B=48;
+  function px(v){return L+v/xmax*(560-L-R);}
+  var step=Math.ceil(xmax/4/10)*10;
+  for(var v=0;v<=xmax;v+=step){
+    var x=px(v);
+    EL("line",{x1:x,x2:x,y1:T0-6,y2:380-B,"class":v===0?"zero":"grid"},svg);
+    T(svg,x,380-B+20,String(v),"ax","middle");
+  }
+  var rowH=(380-T0-B)/data.length;
+  data.forEach(function(d,i){
+    var y=T0+i*rowH, cy=y+rowH/2, h=rowH*0.5;
+    var w=Math.max(d[1]*(560-L-R)/xmax, d[1]>0?2:0);
+    var r=EL("rect",{x:px(0),y:cy-h/2,width:w,height:h,fill:d[2],"fill-opacity":0.8},svg);
+    var tt=EL("title",{},r);tt.textContent=d[0]+" "+d[1]+" 条";
+    if(shapeMode){
+      var m=EL("text",{x:L-40,y:cy+5,"font-size":"15",fill:d[2]},svg);
+      m.textContent=d[3];
+    }
+    T(svg,L-10,cy+5,d[0],"cat","end");
+    T(svg,px(0)+w+7,cy+5,String(d[1]),"val");
+  });
+}
+draw("w",W,70,false);
+draw("e",EMO,20,true);
+</script>
+</body>
+</html>
